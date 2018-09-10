@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Albert Dong</title>
+	<link rel="canonical" href="https://www.albertdong.com"/>
+	<link rel="icon" href="../Media/Self/PersonalLogo.png">
+	<link rel="apple-touch-icon" href="../Media/Self/PersonalLogo.png">
+
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<meta name='title' content='Albert Dong - Product Designer'>
+	<meta name="author" content="Albert Dong">
+	<meta name="description" content="Product Designer, Design Partner @ Dorm Room Fund">
+	<meta http-equiv="Expires" content="1"/>
+
+	<link rel="stylesheet" href="../css/reset.min.css">
+	<link rel="stylesheet" href="../css/animsition.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+
+	<!-- SmartMenus core CSS (required) -->
+	<link href='../css/sm-core-css.css' rel='stylesheet' type='text/css' />
+
+	<meta name="keywords" content="Albert Dong, Portfolio Site, Albert, Dong, Dorm Room Fund">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://albertdong.com">
+	<meta prefix="og: http://ogp.me/ns#" property="og:type" content="Website">
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Albert Dong - Product Designer">
+	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Product Designer, Design Partner @ Dorm Room Fund">
+	<meta prefix="og: http://ogp.me/ns#" property="og:image" content="../Media/Self/PersonalLogo.png">
+	<meta prefix="og: http://ogp.me/ns#" property="og:image:alt" content="../Media/Self/ProfilePicture.png">
+</head>
+<body>
+	<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000"> 
+
+		<div class="navText navBar">
+			<ul id="main-menu" class="sm">
+			  	<li><a href="index.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="500">Home</a></li>
+			  	<li><a href="about.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out-right-sm" data-animsition-out-duration="500">About</a></li>
+				<li><a href="projects.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="rotate-out-sm" data-animsition-out-duration="750">Projects</a></li>
+			</ul>
+		</div>
+
+		<div id="proPicDiv"><img src="../Media/Self/ProfilePicture.png" alt="Profile Pic!"/></div>
+		<div id="nameIntroDiv">
+			<h4 class='white'>Albert Dong</h4>
+			<div id="nameIntro"></div>
+		</div>
+
+
+		<div id="latestWorkDiv"><a href="vcwiz.html" class="hover hoverStart"><p>Latest Work –</p></a></div>
+	</div>
+
+	<!-- Javscript -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../js/animsition.min.js"></script>
+	<script src="../js/app.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+	  $(".animsition").animsition();
+	});
+	</script>
+
+    <script src="../js/blotter.min.js"></script>
+    <script src="../js/liquidDistortMaterial.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117900218-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-117900218-1');
+	</script>
+
+	<script>
+      var text = new Blotter.Text("Albert Dong", {
+        family : "Helvetica-Neue",
+        size : 80,
+        fill : "white",
+        leading: 1.5,
+        paddingLeft: 100,
+        paddingRight: 100
+      });
+
+      var material = new Blotter.LiquidDistortMaterial();
+
+      material.uniforms.uSpeed.value = .3;
+      material.uniforms.uVolatility.value = .035;
+
+      var blotter = new Blotter(material, { texts : text });
+
+      var scope = blotter.forText(text);
+
+      scope.appendTo(document.getElementById("nameIntro"));
+    </script>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+
+	<!-- SmartMenus jQuery plugin -->
+	<script src="../js/jquery.smartmenus.min.js" type="text/javascript"></script>
+</body>
+</html>

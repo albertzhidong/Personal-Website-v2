@@ -1,0 +1,39 @@
+//Colors//
+$white: #FFFFFF;
+$fauxwhite: rgba(253,253,253,1);
+$black: #000000;
+$fauxblack: rgba(50,50,70,1);
+$blackblue: rgba(8,8,11,1);
+$dark-gray: #2c2e2d;
+$blue: #3472FF;
+$blueOpaque: rgba(52,114,255,0);
+$color1: rgba(200,0,0,.08);
+$color2: rgba(0,200,200,.08);
+
+$lightback: rgba(244,248, 250,1);
+
+$wolfgray: rgba(140,140,140,1);
+
+$blackopaque: rgba(0,0,0,.8);
+
+$width-large: "screen and (max-width: 1100px)";
+$width-medium: "screen and (max-width: 850px)";
+$width-small: "screen and (max-width: 500px)";
+
+@mixin responsive($width){
+	@if $width == largescreen {
+		@media #{$width-large}{
+			@content;
+		}
+	}
+	@else if $width == mediumscreen {
+		@media #{$width-medium}{
+			@content;
+		}
+	}
+	@else if $width == smallscreen {
+		@media #{$width-small}{
+			@content;
+		}		
+	}
+}

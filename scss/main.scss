@@ -1,0 +1,750 @@
+@import "../css/components/fonts";
+@import "../css/components/variables";
+
+@import "../css/components/text";
+
+@mixin fullcover($url){
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: $blackblue;
+	overflow-y: auto;
+}
+
+/*---------------------------Nav Bar---------------------------*/
+.navBar{
+	position: fixed;
+	width: 100%;
+	padding: 1.5% 2%;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	opacity: 1;
+
+	@include responsive(smallscreen){
+		padding: 2% 3%;
+	}
+
+	.sm{
+		li{
+			position: relative;
+			display: inline-block;
+			padding: 0% .5%;
+
+			@include responsive(smallscreen){
+				padding: 0% 1%;
+			}
+
+			&:first-child{
+				padding-left: 0;
+			}
+		}
+
+		ul li{
+			padding: 2% 3.5% 2% 0%;
+		}
+
+		a{
+			text-decoration: none;
+		}
+	}
+}
+
+.navBarContent{
+/*	opacity:0;*/
+
+	position: fixed;
+	width: 100%;
+	padding: 1.5% 2%;
+	z-index: 9999;
+	opacity: 1;
+
+	@include responsive(smallscreen){
+		padding: 2% 3%;
+		background-color: $fauxwhite;
+	}
+
+	ul li a{
+		color: $blackblue;
+	}
+
+	.sm{
+		li{
+			position: relative;
+			display: inline-block;
+			padding: 0% .5%;
+
+		@include responsive(smallscreen){
+			padding: 0% 1%;
+		}
+
+			&:first-child{
+				padding-left: 0;
+			}
+		}
+
+		ul li{
+			padding: 2% 3.5% 2% 0%;
+		}
+
+		a{
+			text-decoration: none;
+		}
+	}
+}
+
+.hidden{
+/*	display: none !important;*/
+}
+
+.navBarBlack{
+	ul li a{
+		color: $blackblue;
+	}
+}
+
+/*---------------------------Home Page---------------------------*/
+#proPicDiv{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index:0;
+
+	img{
+		width: 22.5%;
+		opacity: .75;
+		margin-left: 25vw;
+		margin-top: 30vh;
+
+		@include responsive(mediumscreen){
+			width: 35%;
+		}
+
+		@include responsive(smallscreen){
+			width: 50%;
+			margin-left: 5vw;
+		}
+	}
+}
+
+#nameIntroDiv{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index:1;
+
+	#nameIntro{
+		margin-left: 35vw;
+		margin-top: 55vh;
+
+		@include responsive(smallscreen){
+			display: none;
+		}
+
+		canvas{
+			width: 45vw !important;
+			height: 15vh !important;
+		}
+	}
+
+	h4{
+		display: none;
+
+		@include responsive(smallscreen){
+			display: inline-block;
+			margin-left: 5vw;
+			margin-top: 25vh;
+		}
+	}
+}
+
+#latestWorkDiv{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index:2;
+	padding-left: 72.5vw;
+	padding-top: 80vh;
+
+	p{
+		position:relative;
+		display:inline;
+		padding: 0rem .2rem;
+	}
+
+	@include responsive(smallscreen){
+		padding-left: 60vw;
+	}
+}
+
+/*---------------------------About Page---------------------------*/
+#about{
+	width: 55%;
+	padding: 6.5% 0% 0% 2%;
+	position: fixed;
+	z-index: 4;
+
+	@include responsive(mediumscreen){
+		width: 75%;
+		padding: 7.5% 0% 0% 2%;
+	}
+
+	@include responsive(smallscreen){
+		width: 90%;
+		padding: 12.5% 0% 0% 3%;
+	}
+
+	p{
+		margin: 1.5% 0%;
+	}
+
+	#socialmedia{
+
+		margin-top: 3%;
+
+		img{
+			width: 2.75%;
+			margin-right: 1.5%;
+
+			@include responsive(largescreen){
+				width: 4%;
+				margin: .5% 2% .5% 0%;
+			}
+
+			@include responsive(mediumscreen){
+				width: 4.5%;
+				margin: 1% 2% 1% 0%;
+			}
+
+			@include responsive(smallscreen){
+				width: 6%;
+				margin: 2% 3% 2% 0%;
+			}
+		}
+	}
+
+	#resume{
+		margin-top:3%;
+	}
+}
+
+#blackoverlay{
+	position: fixed;
+	width:100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.5);
+}
+
+#kitsune{
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	width: 100vw;
+	height: 100vh;
+
+	img{
+		position: absolute;
+		opacity: .5;
+		width: 40%;
+		top: 0px;
+		right: 0px;
+	}
+}
+
+/*---------------------------Product Pages---------------------------*/
+#cardsBackground{
+	background-color: $fauxwhite;
+
+	h2{
+		padding: 7.5% 0% 1% 10%;
+
+		@include responsive(mediumscreen){
+			padding: 10% 0% 1% 6%;
+		}
+
+		@include responsive(smallscreen){
+			padding: 15% 0% 1% 3%;
+		}
+	}
+}
+
+#projects{
+
+	padding: 2% 10%;
+
+	@include responsive(mediumscreen){
+		padding: 3% 6%;
+	}
+
+	@include responsive(smallscreen){
+		padding: 2% 3%;
+	}
+
+	h3{
+		padding-bottom: 1%;
+	}
+
+	.cards{
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.pair{
+
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+
+			.cardElement{
+
+				position: relative;
+				width: 46.875%;
+				margin-bottom: 4%;
+
+				p{
+					margin-top: .5%;
+
+					@include responsive(smallscreen){
+						display: none;
+					}
+
+					&:last-child{
+						margin: 0%;
+
+						@include responsive(smallscreen){
+							display: block !important;
+						}
+					}
+				}
+
+				a img, img{
+					width: 100%;
+				}
+			}
+		}
+
+		.triplets{
+
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+
+			.cardElement{
+
+				position: relative;
+				width: 28%;
+				margin-bottom: 4%;
+
+				p{
+					margin-top: .5%;
+
+					@include responsive(smallscreen){
+						display: none;
+					}
+
+					&:last-child{
+						margin: 0%;
+
+						@include responsive(smallscreen){
+							display: block !important;
+						}
+					}
+				}
+
+				a img, img{
+					width: 100%;
+				}
+			}
+		}
+
+		.lockcard{
+			display:none;
+		}
+	}
+}
+/*---------------------------Case Studies---------------------------*/
+
+.SpotifyHeader{
+	@include fullcover("../Media/Headers/SpotifyBackground.png");
+}
+
+.FiveYearsHeader{
+	@include fullcover("../Media/Headers/FiveYearBackground.png");
+}
+
+.InnovateHeader{
+	@include fullcover("../Media/Headers/InnovateBackground.jpg");
+}
+
+.VCWizHeader{
+	@include fullcover("../Media/Headers/VCWizBackground.png");
+}
+
+.CourseraHeader{
+	@include fullcover("../Media/Headers/CourseraBackground.png");
+}
+
+.DRFBrandHeader{
+	@include fullcover("../Media/Headers/DRFBrandBackground.png");
+}
+
+.FounderKitHeader{
+	@include fullcover("../Media/Headers/FounderKitBackground.png");
+}
+
+.GenericHeader{
+	@include fullcover("../Media/Headers/GenericBackground.png");
+}
+
+.RCCLHeader{
+	@include fullcover("../Media/Headers/RCCLBackground.jpg");
+}
+
+.projecthome{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: left;
+	padding: 5% 10%;
+	z-index: 0;
+
+	@include responsive(smallscreen){
+		padding: 5%;
+	}
+}
+
+
+
+.projectintro{
+	position: relative;
+
+	h2, h3, h4, p{
+		display: inline-block;
+		width: auto;
+		background-color: $blackopaque;
+		line-height: 125%;
+	}
+
+	.projectname{
+
+		width: 100%;
+
+
+		h4{
+			margin: 2.5% 0% 0% 0%;
+		}
+	}
+
+	p{
+		margin: 0% 0%;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.divider{
+		width: 50vw;
+		height: .5vh;
+		background-color: $blackblue;
+		margin: 2.5% 0%;
+
+		@include responsive(mediumscreen){
+			width: 70vw;
+		}
+	}
+
+	#projectDetails{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin-top: 2.5%;
+
+		p{
+			margin-right: 4%;
+		}
+	}
+
+}
+
+.projectBody{
+
+	.sidebarDiv{
+		position: fixed;
+		top: 15vh;
+		left: 7.5vw;
+		z-index: 2;
+		padding: 1vh .75vw 0vh .75vw;
+		width: 15vw;
+		display: none;
+		opacity: 0;
+		background-color: inherit;
+		min-height: 22.5vh;
+
+		@include responsive(largescreen){
+			width: 17.5vw;
+		}
+
+		@include responsive(mediumscreen){
+			width: 22.5vw;
+			left: 5vw;
+		}
+
+		a{
+			text-decoration: none !important;
+			p{
+				color: $wolfgray;
+			}
+		}
+
+		#scrollIndicator{
+			position: absolute;
+			margin-top: 15%;
+			display: flex;
+			justify-content: flex-end;
+			bottom: 0;
+			right: 5%;
+		}
+
+		&::before{
+			content: "";
+			height: 100%;
+			top: -1vh;
+			left: -1vh;
+			width: 100%;
+			background: $color1;
+			transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
+			position: absolute;
+			z-index: -1;
+			-webkit-filter: blur(1px);
+			filter: blur(1px);
+		}
+
+		&::after{
+			content: "";
+			height: 100%;
+			top: 1vh;
+			left: 1vh;
+			width: 100%;
+			background: $color2;
+			transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
+			position: absolute;
+			z-index: -1;
+			-webkit-filter: blur(1px);
+			filter: blur(1px);
+		}
+
+		.activeNav{
+			color: $blackblue;
+		}
+	}
+
+	.projectContent{
+
+		background-color: $fauxwhite;
+		position: relative;
+
+		.contentSection{
+			background-color: $fauxwhite;
+			width: 62.5%;
+			margin-left: 30%;
+			padding: 2.5% 5%;
+
+			@include responsive(smallscreen){
+				margin-left: 3%;
+				width: 94%;
+			}
+
+			h4{
+				margin: 3% 0% 0% 0%;
+
+				@include responsive(mediumscreen){
+					margin: 6% 0% 0% 0%;
+				}
+
+				&::first-child{
+					margin: 2.5% 0% 0% 0%;
+				}
+			}
+
+			p{
+				margin-bottom: 2.5%;
+			}
+
+			.singleImg{
+				margin: 3% 0%;
+				width: 100%;
+
+				@include responsive(smallscreen){
+					margin: 4% 0%;
+				}
+
+				img, a img{
+					width: 100%;
+				}
+			}
+
+			.smallImg{
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin: 3% 0%;
+
+				@include responsive(smallscreen){
+					margin: 4% 0%;
+				}
+
+				img{
+					width: 50%;
+
+					@include responsive(largescreen){
+						width: 60%;
+					}
+
+					@include responsive(mediumscreen){
+						width: 80%;
+					}
+
+					@include responsive(smallscreen){
+						width: 100%;
+					}
+				}
+			}
+
+			.twinImg{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin: 3% 0%;
+
+				@include responsive(smallscreen){
+					margin: 4% 0%;
+				}
+
+				img{ 
+					width: 47.5%;
+				}
+			}
+
+			.smallTwinImg{
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin: 3% 0%;
+
+				@include responsive(smallscreen){
+					margin: 4% 0%;
+				}
+
+				img{ 
+					width: 25%;
+
+				}
+			}
+
+			.tripleImg{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				align-items: center;
+				margin: 3% 0%;
+
+				@include responsive(smallscreen){
+					margin: 4% 0%;
+				}
+
+				img{ 
+					width: 37.5%;
+				}
+			}
+
+			.video{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 3% 0%;
+
+				@include responsive(smallscreen){
+					margin: 4% 0%;
+				}
+			}
+
+			.blockquote{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+/*---------------------------Footer---------------------------*/
+.footer{
+	background-color: $blackblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2% 0%;
+
+	@media #{$width-small}{
+		padding: 5% 8%;
+	}
+
+	a{
+		text-decoration: none;
+	}
+}
+
+.copyright{
+	padding-left: 10%;
+	padding-bottom: 1%;
+	background-color: $fauxwhite;
+
+	@media #{$width-medium}{
+		padding-left: 6%;
+	}
+
+	@media #{$width-small}{
+		padding-left: 3%;
+	}
+}
+
+.copyright1{
+	padding-left: 35%;
+	padding-bottom: 1%;
+	background-color: $fauxwhite;
+
+	@media #{$width-medium}{
+		padding-left: 35%;
+	}
+
+	@media #{$width-small}{
+		padding-left: 7.5%;
+	}
+}
+

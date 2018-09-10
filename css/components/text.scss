@@ -1,0 +1,187 @@
+.navText{
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: $fauxwhite;
+}
+
+h1{
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 4rem;
+	color: $fauxwhite;
+	line-height: 150%;
+
+	@include responsive(smallscreen){
+		font-size: 3rem;
+	}
+}
+
+h2{
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 3rem;
+	color: $fauxwhite;
+	line-height: 150%;
+
+	@include responsive(smallscreen){
+		font-size: 2.25rem;
+	}
+}
+
+h3{
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+	color: $fauxwhite;
+	line-height: 150%;
+
+	@include responsive(smallscreen){
+		font-size: 1.75rem;
+	}
+}
+
+h4{
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: $fauxwhite;
+	line-height: 150%;
+
+	@include responsive(smallscreen){
+		font-size: 1.4rem;
+	}
+}
+
+p{
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	color: $fauxwhite;
+	line-height: 150%;
+
+	@include responsive(smallscreen){
+		font-size: 1rem;
+	}
+}
+
+@font-face{
+	font-family: CircularStd-Book; 
+	src: url('../Media/Fonts/CircularStd-Book.otf');
+}
+
+.Circular{
+	font-family: CircularStd-Book, Helvetica, Arial, sans-serif;
+	text-align: center;
+	line-height: 200%;
+	color: $black;
+	margin: 0% 0% 2% 0% !important;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.black{
+	color:$blackblue !important;
+}
+
+.gray{
+	color: $wolfgray;
+}
+
+.opaque{
+	color: rgba(255,255,255,.8);
+}
+
+.heavyWeight{
+	font-weight: 500;
+}
+
+.nolineheight{
+	line-height: 100% !important;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.strike{
+	text-decoration: line-through;
+}
+
+.nounderline{
+	text-decoration: none !important;
+}
+
+.hoverStart{
+	position:relative;
+	display:inline;
+	text-decoration: none !important;
+
+	&::after{
+		height: .5rem;
+		left: 0rem;
+		top: 0rem;
+		content: "";
+		width: 0%;
+		position: absolute;
+		z-index: -1;
+		transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
+		background: $blueOpaque;
+	}
+}
+
+.hoverEnd{
+	position:relative;
+	display:inline;
+	text-decoration: none !important;
+
+	&::after{
+		height: .5rem;
+		left:.75rem;
+		top:.75rem;
+		content: "";
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+		transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
+		background: $blue;
+	}		
+}
+
+.hyperlinkStart{
+	text-decoration: none !important;
+	color: $fauxwhite;
+	position:relative;
+	display:inline;
+
+	&::after{
+		height: .15rem;
+		left:.1rem;
+		top:1rem;
+		content: "";
+		width: 100%;
+		position: absolute;
+		z-index: 5;
+		transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
+		background: $blue;
+	}
+}
+
+.hyperlinkEnd{
+	text-decoration: none !important;
+	color: $fauxwhite;
+	position:relative;
+	display:inline;
+
+	&::after{
+		height: .15rem;
+		left:.75rem;
+		top:1rem;
+		content: "";
+		width: 100%;
+		position: absolute;
+		z-index: 5;
+		transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
+		background: $blue;
+	}
+}
