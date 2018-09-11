@@ -1,3 +1,5 @@
+DirectoryIndex html/index.html
+
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
