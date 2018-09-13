@@ -357,7 +357,7 @@ body{
 			.cardElement{
 
 				position: relative;
-				width: 28%;
+				width: 29%;
 				margin-bottom: 4%;
 
 				@include responsive(smallscreen){
@@ -428,6 +428,10 @@ body{
 
 .RCCLHeader{
 	@include fullcover("../Media/Headers/RCCLBackground.jpg");
+}
+
+.AloftHeader{
+	@include fullcover("../Media/Headers/AloftBackground.png");
 }
 
 .projecthome{
