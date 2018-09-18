@@ -28,7 +28,7 @@ $(document).ready(function(){
 		        if((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
 		        	$('.sidebarDiv > a > p').removeClass('activeNav');
 		            $('.sidebarDiv > a').last().find('p').addClass('activeNav');
-		        }else if (position >= target) {
+		        }else if (position + 10 >= target) {
 		        	$('.sidebarDiv > a > p').removeClass('activeNav');
 		            $('.sidebarDiv > a[href="#' + id + '"]' + ' > p').addClass('activeNav');
 		        }

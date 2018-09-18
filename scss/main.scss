@@ -434,6 +434,10 @@ body{
 	@include fullcover("../Media/Headers/AloftBackground.png");
 }
 
+.AppDHeader{
+	@include fullcover("../Media/Headers/AppDBackground.png");
+}
+
 .projecthome{
 	position: relative;
 	width: 100vw;
@@ -449,8 +453,6 @@ body{
 		padding: 5%;
 	}
 }
-
-
 
 .projectintro{
 	position: relative;
@@ -553,8 +555,8 @@ body{
 			transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
 			position: absolute;
 			z-index: -1;
-			-webkit-filter: blur(1px);
-			filter: blur(1px);
+/*			-webkit-filter: blur(.5px);
+			filter: blur(.5px);*/
 		}
 
 		&::after{
@@ -567,12 +569,25 @@ body{
 			transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
 			position: absolute;
 			z-index: -1;
-			-webkit-filter: blur(1px);
-			filter: blur(1px);
+/*			-webkit-filter: blur(.5px);
+			filter: blur(.5px);*/
 		}
 
 		.activeNav{
 			color: $blackblue;
+		}
+	}
+
+	.extendSB{
+		min-height: 27.5vh;
+
+		@include responsive(largescreen){
+			width: 20vw;
+		}
+
+		@include responsive(mediumscreen){
+			width: 25vw;
+			left: 5vw;
 		}
 	}
 
