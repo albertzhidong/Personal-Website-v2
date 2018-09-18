@@ -196,6 +196,7 @@ body{
 	padding: 6.5% 0% 0% 2%;
 	position: fixed;
 	z-index: 4;
+	background-color: $blackblue;
 
 	@include responsive(mediumscreen){
 		width: 75%;
