@@ -196,7 +196,7 @@ body{
 	padding: 6.5% 0% 0% 2%;
 	position: fixed;
 	z-index: 4;
-	background-color: $blackblue;
+	background-color: $clear;
 
 	@include responsive(mediumscreen){
 		width: 75%;
@@ -425,10 +425,6 @@ body{
 
 .GenericHeader{
 	@include fullcover("../Media/Headers/GenericBackground.png");
-}
-
-.RCCLHeader{
-	@include fullcover("../Media/Headers/RCCLBackground.jpg");
 }
 
 .AloftHeader{
