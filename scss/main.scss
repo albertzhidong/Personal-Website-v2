@@ -198,6 +198,7 @@ body{
 	z-index: 4;
 	background-color: $clear;
 
+
 	@include responsive(mediumscreen){
 		width: 75%;
 		padding: 7.5% 0% 0% 2%;
@@ -206,7 +207,7 @@ body{
 	@include responsive(smallscreen){
 		width: 90%;
 		padding: 12.5% 0% 0% 3%;
-		background-color: $blacklightopaque;
+		background-color: $clear;
 	}
 
 	p{

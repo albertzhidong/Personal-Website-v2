@@ -159,7 +159,7 @@ p{
 	display:inline;
 
 	&::after{
-		height: .15rem;
+		height: 3px; /*.15rem*/
 		left:.1rem;
 		top:1rem;
 		content: "";
@@ -178,7 +178,7 @@ p{
 	display:inline;
 
 	&::after{
-		height: .15rem;
+		height: 3px;
 		left:.75rem;
 		top:1rem;
 		content: "";
