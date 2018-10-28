@@ -35,6 +35,7 @@ $(document).ready(function(){
 		    });
 		});
 	}
+
 });
 
 function scrollTracker() { //use 2 min left rather than a ever changin percentage 
@@ -45,6 +46,19 @@ function scrollTracker() { //use 2 min left rather than a ever changin percentag
   document.getElementById("scrollIndicator").innerHTML="<h4 class='black heavyWeight'>" + scrolled + "%</h4>";
 }
 
+	// $(document).on('scroll', function() {
+	// 	if($('#projectsPage')){
+	// 		if($(this).scrollTop() + 15 < $('#projectsPage').position().top){
+	// 			if($('.navBar').hasClass("navBarBlack")){
+	// 				$('.navBar').removeClass('navBarBlack');
+	// 			}
+	// 		} else if($(this).scrollTop() + 15 > $('#projectsPage').position().top){
+	// 			if($('.navBar').hasClass("navBarBlack") == false){
+	// 				$('.navBar').addClass('navBarBlack');
+	// 			}
+	// 		}
+	// 	}
+	// })
 
 	// if($(this).scrollTop() === 0){
  //    	if($('.navBarContent').hasClass('hidden') == true){
@@ -52,6 +66,16 @@ function scrollTracker() { //use 2 min left rather than a ever changin percentag
 	// 		$('.navBarContent').animate({'opacity':'1'}, 300);
 	// 	}
 	// }
+
+	// $(window).scroll(function() { 
+	//     var windscroll = $(window).scrollTop();
+	//     $('.contentSection h4').each(function(i) { //should i keep it working as if?
+	//         if ($(this).position().top <= windscroll) {
+	//             $('.sidebarDiv a p.activeNav').removeClass('activeNav');
+	//             $('.sidebarDiv a p').eq(i).addClass('activeNav');
+	//         }
+	//     });
+	// }).scroll();
 
 	// $(document).on('scroll', function() {
 	// 	if($(this).scrollTop() === 0){
@@ -71,13 +95,3 @@ function scrollTracker() { //use 2 min left rather than a ever changin percentag
 	// 		}
 	//     }
 	// })
-
-	// $(window).scroll(function() { 
-	//     var windscroll = $(window).scrollTop();
-	//     $('.contentSection h4').each(function(i) { //should i keep it working as if?
-	//         if ($(this).position().top <= windscroll) {
-	//             $('.sidebarDiv a p.activeNav').removeClass('activeNav');
-	//             $('.sidebarDiv a p').eq(i).addClass('activeNav');
-	//         }
-	//     });
-	// }).scroll();
