@@ -187,6 +187,11 @@ body{
 	h2,h4{
 		color: $fauxwhite;
 	}
+
+	@include responsive(mediumscreen){
+		padding-left: 10vw;
+	}
+
 }
 
 #arrowDiv{
