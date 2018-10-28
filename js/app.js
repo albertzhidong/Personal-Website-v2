@@ -91,25 +91,43 @@ $(document).ready(function(){
 		}
 	})
 
-	// $(document).on('scroll', function() {
-	// 	if($('.toBlack')){
-	// 		if($(this).scrollTop() + 15 < $('.projectContent').position().top){
-	// 			if($('.navText').hasClass("navBarBlack")){
-	// 				$('.navText').removeClass('navBarBlack');
-	// 			}
-	// 		} else if($(this).scrollTop() + 15 > $('.projectContent').position().top){
-	// 			if($('.navText').hasClass("navBarBlack") == false){
-	// 				$('.navText').addClass('navBarBlack');
-	// 			}
-	// 		}
-	// 	}
-	// })
-
 	//for mobile
 	if($(window).width() < 500){
 		document.getElementById('navAlbert').innerHTML = "AD";
 	}
 });
+
+//controls the flashing aniamtion of the arrow
+function arrowFlash(){
+  $('#arrowDiv').find('a').find('img').finish().show()
+    .animate({'opacity':'0'}, 2000, function(){
+    $(this).animate({'opacity':'1'}, 2000);
+  });
+}
+
+  // var t = setInterval(function(){
+  //   if(scrolled === true){
+  //      $('#arrowDiv').find('a').find('img').finish().show()
+  //       .animate({'opacity':'0'}, 2000, function(){
+  //       $(this).animate({'opacity':'1'}, 2000);
+  //      });
+  //   }
+  // }, 3500);
+
+// $(document).on('scroll', function() {
+// 	if($('.toBlack')){
+// 		if($(this).scrollTop() + 15 < $('.projectContent').position().top){
+// 			if($('.navText').hasClass("navBarBlack")){
+// 				$('.navText').removeClass('navBarBlack');
+// 			}
+// 		} else if($(this).scrollTop() + 15 > $('.projectContent').position().top){
+// 			if($('.navText').hasClass("navBarBlack") == false){
+// 				$('.navText').addClass('navBarBlack');
+// 			}
+// 		}
+// 	}
+// })
+
 
 // //looks to see if the user has scrolled
 // var scrolled = true;
