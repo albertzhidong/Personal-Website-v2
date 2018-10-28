@@ -48,7 +48,7 @@ body{
 			color: $fauxwhite;
 
 			@include responsive(smallscreen){
-				padding: 0% 1%;
+				padding: 0% 1.75%;
 			}
 
 			&:first-child{
