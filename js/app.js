@@ -95,6 +95,44 @@ $(document).ready(function(){
 	if($(window).width() < 500){
 		document.getElementById('navAlbert').innerHTML = "AD";
 	}
+
+	//fading the name in and out 
+	$('.tink').mouseenter(function(){
+		$(this).find('.imgtext').animate({'opacity':'0'}, 300, function(){
+			$(this).find('.imgtxt').css({'display':'none'});
+		});
+	});
+	$('.tink').mouseleave(function(){
+		$(this).find('.imgtxt').css({'display':'inline-block'});
+		$(this).find('.imgtext').animate({'opacity':'100'}, 300);
+	});
+
+	//modal for tinks
+	$('.tink').click(function(){
+		var modal = document.getElementById('myModal');
+		var src = $(this).find('.imgpic').find('.mediasrc');
+		var captionText = document.getElementById('caption');
+
+	    modal.style.display = "block";
+	    if(src.is('img')){
+			var modalImg = document.getElementById("modalImg");
+	    	modalImg.style.display = "block";
+	    	modalImg.src = src.attr('src');
+	    }
+	    else if(src.is('video')){
+	    	var modalVideo = document.getElementById("modalVideo");
+	    	modalVideo.style.display = "block";
+	    	modalVideo.src = src.attr('src');
+	    	modalVideo.play();
+	    }
+	    captionText.innerHTML = src.attr('alt');
+	});
+
+	$('#myModal').click(function(){
+		 $(this).css({'display':'none'});
+		 $(this).find('img').css({'display':'none'});
+		 $(this).find('video').css({'display':'none'});
+	});
 });
 
 //controls the flashing aniamtion of the arrow
@@ -155,11 +193,11 @@ function arrowFlash(){
 // }
 
 //controls the flashing aniamtion of the arrow
-function arrowFlash(){
-  $('#arrowDiv').find('a').find('img').finish().show()
-    .animate({'opacity':'0'}, 2000, function(){
-    $(this).animate({'opacity':'1'}, 2000);
-  });
+// function arrowFlash(){
+//   $('#arrowDiv').find('a').find('img').finish().show()
+//     .animate({'opacity':'0'}, 2000, function(){
+//     $(this).animate({'opacity':'1'}, 2000);
+//   });
   // var t = setInterval(function(){
   //   if(scrolled === true){
   //      $('#arrowDiv').find('a').find('img').finish().show()
@@ -168,4 +206,4 @@ function arrowFlash(){
   //      });
   //   }
   // }, 3500);
-}
+// }

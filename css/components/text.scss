@@ -53,7 +53,19 @@ h4{
 	}
 }
 
-p{
+h5{
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	color: $fauxwhite;
+	line-height: 125%;
+
+	@include responsive(smallscreen){
+		font-size: 1rem;
+	}
+}
+
+p, li{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 1.1rem;
