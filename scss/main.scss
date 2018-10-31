@@ -218,7 +218,8 @@ body{
 	position: fixed;
 	z-index: 4;
 	background-color: $clear;
-	overflow-y: auto;
+	overflow-y: scroll;
+	height: 100%;
 
 
 	@include responsive(mediumscreen){
