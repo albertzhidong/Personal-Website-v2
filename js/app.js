@@ -71,6 +71,14 @@ $(document).ready(function(){
 		document.getElementById("hoverGoodreads").src="../Media/SocialMedia/goodreads.png";
 	});
 
+	$('#hoverMedium').mouseenter(function(){
+		document.getElementById("hoverMedium").src="../Media/SocialMedia/medium_select.png";
+	});
+
+	$('#hoverMedium').mouseleave(function(){
+		document.getElementById("hoverMedium").src="../Media/SocialMedia/medium.png";
+	});
+
 	$('.locked').click(function(){
 		$(this).find('img').toggleClass('lockcard');
 	});
