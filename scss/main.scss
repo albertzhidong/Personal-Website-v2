@@ -810,9 +810,11 @@ body{
 }
 
 /*---------------------------Tinkerings---------------------------*/
+
 #tinkerings{
-	margin: 15vh 5vw 10vh 5vw;
 	width: 100vw;
+	margin: 15vh 5vw 10vh 5vw;
+/*	z-index: 1;*/
 /*	color: $blackblue;*/
 
 	.tink{
@@ -964,4 +966,22 @@ body{
     .modal-content {
         width: 100%;
     }
+}
+
+#tinkertext{
+	position: fixed;
+	width: 35vw;
+	z-index: -1;
+	margin: 15vh 5vw 10vh 50vw;
+	top: 0px;
+
+	@include responsive(mediumscreen){
+		margin: 15vh 5vw 10vh 55vw;
+	}
+
+	@include responsive(smallscreen){
+		position: relative;
+		width: 100vw;
+		margin: 20vh 5vw 5vh 5vw;
+	}
 }

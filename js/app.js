@@ -86,7 +86,7 @@ $(document).ready(function(){
 	arrowFlash();
 
 	$(document).on('scroll', function() {
-		if($('#projectsPage')){
+		if($('.animsition').hasClass('index') == true){
 			if($(this).scrollTop() + 15 < $('#projectsPage').position().top){
 				if($('.navText').hasClass("navBarBlack")){
 					$('.navText').removeClass('navBarBlack');
