@@ -819,6 +819,10 @@ body{
 /*	z-index: 1;*/
 /*	color: $blackblue;*/
 
+    @include responsive(smallscreen){
+    	margin-left: 10vw;
+    }
+
 	.tink{
 		width: 20vw;
 		padding: 1% 0%;
