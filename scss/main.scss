@@ -814,10 +814,11 @@ body{
 #tinkerings{
 	width: 100vw;
 	margin: 15vh 5vw 10vh 5vw;
-	overflow-x: hidden;
-	max-width: 100vw;
-/*	z-index: 1;*/
-/*	color: $blackblue;*/
+
+	@include responsive(smallscreen){
+		overflow-x: hidden;
+		max-width: 100vw;
+	}
 
 	.tink{
 		width: 20vw;
