@@ -102,6 +102,10 @@ body{
 	background-image: url("../Media/Self/HomeBackground.png");
 	top: 0;
 	position: relative;
+
+	@include responsive(smallscreen){
+		background-image: url("../Media/Self/HomeBackground_small.png");
+	}
 }
 
 /*#proPicDiv{
