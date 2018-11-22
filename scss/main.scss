@@ -191,14 +191,13 @@ body{
 		margin-top: 2%;
 	}
 
-/*	@include responsive(largescreen){
+	@include responsive(largescreen){
 		left: 0%;
-	}*/
+	}
 
 	@include responsive(mediumscreen){
 		width: 75%;
 		padding: 7.5% 0% 0% 2%;
-		left: 0%;
 	}
 
 	@include responsive(smallscreen){
