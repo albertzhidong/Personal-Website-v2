@@ -262,16 +262,16 @@ body{
 	height: 100vh;
 	background-color: $clear;
 
+	@include responsive(smallscreen){
+		opacity: .5;
+	}
+
 	img{
 		position: absolute;
 		opacity: .5;
 		width: 40%;
 		top: 0px;
 		right: 0px;
-
-		@include responsive(smallscreen){
-			opacity: .25;
-		}
 	}
 }
 
