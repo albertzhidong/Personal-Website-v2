@@ -180,7 +180,7 @@ body{
 	padding: 6.5% 0% 0% 2%;*/
 	width: 100vw;
 	padding: 6.5% 40% 0% 2%;
-	left: 23%;
+	left: 28%;
 	position: fixed;
 	z-index: 4;
 	background-color: $clear;
@@ -189,6 +189,10 @@ body{
 
 	div:first-of-type{
 		margin-top: 2%;
+	}
+
+	@include responsive(xlargescreen){
+		left: 23%;
 	}
 
 	@include responsive(largescreen){
