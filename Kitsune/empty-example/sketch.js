@@ -22,7 +22,7 @@ function draw() {
 
 setTimeout(function(){
 	kitsune.prepStreams();
-}, 2500);
+}, 2000);
 
 
 function Kitsune(x, y){
