@@ -33,34 +33,37 @@
 </head>
 <body>
 	<div class="animsition index" data-animsition-in-class="fade-in-down-sm" data-animsition-in-duration="1000"> 
-		<div class="navText navBar">
+		<div class="navText navBar navContent">
 			<ul id="main-menu" class="sm">
 			  	<li><a href="index.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out-down-sm" data-animsition-out-duration="500">Works</a></li>
-				<li><a href="tinkerings.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="500">Play(s)</a></li>
+				<li><a href="plays.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="500">Play(s)</a></li>
 			  	<li><a href="about.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out-right-sm" data-animsition-out-duration="500">About</a></li>
 			</ul>
 		</div>
-		<div class="navText navBar navName">
+		<div class="navText navBar navName navContent">
 			<ul id="main-menu" class="sm sm-left">
 				<li><a href="index.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="500" id="navAlbert">Albert Dong</a></li>
 			</ul>
 		</div>
+
 		<div id="titleSlide">
 			<div id="welcome">
-				<h2>Hey! 👋🏼</h2>
-				<h2>I'm Albert.</h2>
+				<p class="BylineText gray">Hello.</p>
+				<p class="AboutText">I like working with amazing founders and lunches at quiet cafes.</p>
+				<p class="AboutText">I’ve created at VC firms (Dorm Room Fund), early-stage startups (Fetchum, Pison), startup studios (Super), and for billion-dollar companies (AppDynamics, LimeBike, Royal Carribbean).</p>
+				<p class="AboutText">I believe in abstracting ideas to their base principles and listening to other's stories as frameworks for designing great products.</p>
+				<p class="AboutText">Right now, I’m exploring how can we enable mass-consumer adoption of AR by designing a future with a love for humanity at its core. <a href="https://medium.com/@albertdong_" class="hyperlink hyperlinkStart textblack" target="_blank" rel="noopener">Sometimes, I record my thoughts on it.</a></p>
 			</div>
-
-<!-- 			<div id="arrowDiv">
-				<a href="#projectsPage"><img src="Media/Self/DownArrow.png" alt="Down Arrow"/></a>
-			</div> -->
+			<div id="homepagePic" >
+				<img class="rellax" data-rellax-speed="4" src="Media/Self/me.png">
+			</div>
 		</div>
 
 		<div id="projectsPage">
-				<h2 class="black">Select Work</h2>
+				<h2>Select Work</h2>
 
 				<div id="projects">
-					<h3 class="black">Products –</h3>
+					<h3>Products –</h3>
 
 					<div class="cards">
 						<div class="pair">
@@ -96,7 +99,7 @@
 				</div>
 
 				<div id="projects">
-					<h3 class="black">Graphics –</h3>
+					<h3>Graphics –</h3>
 
 					<div class="cards">
 						<div class="pair">
@@ -106,7 +109,7 @@
 								<p class="heavyWeight gray">Dorm Room Fund</p>
 							</div>
 							<div class="cardElement">
-								<a href="aloft.html" class="animsition-link" data-animsition-out-class="fade-out-down-sm" data-animsition-out-duration="500"><img src="Media/Cards/AloftCard.gif"/></a>
+								<a href="miracle.html" class="animsition-link" data-animsition-out-class="fade-out-down-sm" data-animsition-out-duration="500"><img src="Media/Cards/MiracleCard.gif"/></a>
 								<p class="gray">E-Commerce Marketing Ads</p>
 								<p class="heavyWeight gray">Miracle</p>
 							</div>
@@ -133,7 +136,7 @@
 				</div>
 
 				<div id="projects">
-					<h3 class="black">Events –</h3>
+					<h3>Events –</h3>
 
 					<div class="cards">
 						<div class="pair">
@@ -151,7 +154,7 @@
 					</div>
 				</div>
 
-				<p class="black copyright">© Albert Dong, 2018. All Rights Reserved.</p>
+				<p class="copyright">© Albert Dong, 2018. All Rights Reserved.</p>
 			</div>
 		</div>
 	</div>
@@ -186,6 +189,11 @@
 	<script src="js/smooth-scroll.min.js"></script>
 	<script>
 		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
+
+	<script src="js/rellax.min.js"></script>
+	<script>
+	  var rellax = new Rellax('.rellax');
 	</script>
 </body>
 </html>

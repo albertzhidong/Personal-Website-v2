@@ -83,21 +83,21 @@ $(document).ready(function(){
 		$(this).find('img').toggleClass('lockcard');
 	});
 
-	arrowFlash();
+	// arrowFlash();
 
-	$(document).on('scroll', function() {
-		if($('.animsition').hasClass('index') == true){
-			if($(this).scrollTop() + 15 < $('#projectsPage').position().top){
-				if($('.navText').hasClass("navBarBlack")){
-					$('.navText').removeClass('navBarBlack');
-				}
-			} else if($(this).scrollTop() + 15 > $('#projectsPage').position().top){
-				if($('.navText').hasClass("navBarBlack") == false){
-					$('.navText').addClass('navBarBlack');
-				}
-			}
-		}
-	})
+	// $(document).on('scroll', function() {
+	// 	if($('.animsition').hasClass('index') == true){
+	// 		if($(this).scrollTop() + 15 < $('#projectsPage').position().top){
+	// 			if($('.navText').hasClass("navBarBlack")){
+	// 				$('.navText').removeClass('navBarBlack');
+	// 			}
+	// 		} else if($(this).scrollTop() + 15 > $('#projectsPage').position().top){
+	// 			if($('.navText').hasClass("navBarBlack") == false){
+	// 				$('.navText').addClass('navBarBlack');
+	// 			}
+	// 		}
+	// 	}
+	// })
 
 	//for mobile
 	if($(window).width() < 500){
@@ -144,12 +144,12 @@ $(document).ready(function(){
 });
 
 //controls the flashing aniamtion of the arrow
-function arrowFlash(){
-  $('#arrowDiv').find('a').find('img').finish().show()
-    .animate({'opacity':'0'}, 2000, function(){
-    $(this).animate({'opacity':'1'}, 2000);
-  });
-}
+// function arrowFlash(){
+//   $('#arrowDiv').find('a').find('img').finish().show()
+//     .animate({'opacity':'0'}, 2000, function(){
+//     $(this).animate({'opacity':'1'}, 2000);
+//   });
+// }
 
   // var t = setInterval(function(){
   //   if(scrolled === true){

@@ -1,15 +1,15 @@
 .navText{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 500;
-	font-size: 1.5rem;
-	color: $fauxwhite;
+	font-size: 1.35rem;
+	color: $textblack;
 }
 
 h1{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	font-size: 4rem;
-	color: $fauxwhite;
+	color: $textblack;
 	line-height: 150%;
 
 	@include responsive(smallscreen){
@@ -21,7 +21,7 @@ h2{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	font-size: 3rem;
-	color: $fauxwhite;
+	color: $textblack;
 	line-height: 150%;
 
 	@include responsive(smallscreen){
@@ -33,7 +33,7 @@ h3{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	font-size: 2rem;
-	color: $fauxwhite;
+	color: $textblack;
 	line-height: 150%;
 
 	@include responsive(smallscreen){
@@ -45,7 +45,7 @@ h4{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	font-size: 1.5rem;
-	color: $fauxwhite;
+	color: $textblack;
 	line-height: 150%;
 
 	@include responsive(smallscreen){
@@ -53,28 +53,42 @@ h4{
 	}
 }
 
-h5{
+p, li{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 1.1rem;
-	color: $fauxwhite;
-	line-height: 125%;
+	color: $textblack;
+	line-height: 150%;
 
 	@include responsive(smallscreen){
 		font-size: 1rem;
 	}
 }
 
-p, li{
+.AboutText{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	font-size: 1.1rem;
-	color: $fauxwhite;
+	font-weight: 500;
+	font-size: .95rem;
 	line-height: 150%;
 
 	@include responsive(smallscreen){
-		font-size: 1rem;
-	}
+		font-size: .85rem;
+	}	
+}
+
+.BylineText{
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: .825rem;
+	line-height: 100%;
+
+	@include responsive(smallscreen){
+		font-size: .75rem;
+	}	
+}
+
+.slineheight{
+	line-height: 100%;
 }
 
 @font-face{
@@ -86,7 +100,7 @@ p, li{
 	font-family: CircularStd-Book, Helvetica, Arial, sans-serif;
 	text-align: center;
 	line-height: 200%;
-	color: $black;
+	color: $textblack;
 	margin: 0% 0% 2% 0% !important;
 	font-weight: 500;
 	font-size: 1.5rem;
@@ -98,6 +112,10 @@ p, li{
 
 .textblack{
 	color: $textblack !important;
+}
+
+.textwhite{
+	color: $fauxwhite !important;
 }
 
 .gray{
@@ -172,8 +190,8 @@ p, li{
 
 	&::after{
 		height: 3px; /*.15rem*/
-		left:.1rem;
-		top:1rem;
+		left: .1rem;
+		top: .9rem;
 		content: "";
 		width: 100%;
 		position: absolute;
@@ -191,8 +209,8 @@ p, li{
 
 	&::after{
 		height: 3px;
-		left:.75rem;
-		top:1rem;
+		left: .75rem;
+		top: .9rem;
 		content: "";
 		width: 100%;
 		position: absolute;
