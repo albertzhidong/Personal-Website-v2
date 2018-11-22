@@ -1,58 +1,61 @@
-var kitsuneImg;
+//http-server -c-1
+
+var victimImg;
 var paintWidth = 7;
 
-var maskX = 374;
-var maskY = 616;
+var canvasX = 550;
+var canvasY = 749; 
 
-var canvasX = 550; //500
-var canvasY = 749; //717
+var dripXStart = 1;
+var dripXLimit = 374; //x coordinate of when the drip area shoudl stop
 
-var kitsune;
+//limits area where the drip can start on the y
+var yStartStart = 25; 
+var yStartLimit = 620;
+
+var depthLimit = canvasY - 20; //lowest point it can fall to 
+var lengthLimit = 100; //length of stream 
+
+var victim;
 
 function setup() {
 	createCanvas(canvasX, canvasY);
-	kitsuneImg = loadImage('../media/Kitsune2.png');
-	kitsune = new Kitsune(0, 0);
+	victimImg = loadImage('../media/Kitsune2.png');
+	victim = new Victim(0, 0);
 }
 
 function draw() {
 	clear();
-	kitsune.display();
+	victim.display();
 } 
 
 setTimeout(function(){
-	kitsune.prepStreams();
+	victim.prepStreams();
 }, 2000);
 
 
-function Kitsune(x, y){
+function Victim(x, y){
 	this.x = x; //top left corner 
 	this.y = y; //top left corner 
 	var el = this;
 	var streams = []; //each image has an array with streams
 
 	this.display = function(){
-		image(kitsuneImg, 0, 0);
+		image(victimImg, 0, 0);
 		this.paint();
 	}
 
 	this.prepStreams = function(){ 
 
-		image(kitsuneImg, 0, 0);
+		image(victimImg, 0, 0);
 		var lastStreamDepth = Math.floor(Math.random() * (100 - 20 + 1)) + 20; //random initial start for first stream 
 
-		for(var i = 1; i < maskX - paintWidth; i = i + 5){ //for all places horizontally 
+		for(var i = dripXStart; i < dripXLimit - paintWidth; i = i + 5){ //for all places horizontally 
 
 			//generates random width of the paint drip
 			paintWidth = (Math.floor(Math.random() * (10 - 6 + 1)) + 6); 
 
-			//generates random number of where each stream starts 
-			var yStartStart = 25;
-			var yStartLimit = 120;
-			var yStart = (Math.floor(Math.random() * ((maskY-yStartLimit) - yStartStart + 1)) + yStartStart); 
-
-			var depthLimit = canvasY - 20;
-			var lengthLimit = 100;
+			var yStart = (Math.floor(Math.random() * (yStartLimit - yStartStart + 1)) + yStartStart); 
 
 			//calculates the length of the stream 
 			var maxDepth = 0;
@@ -63,8 +66,8 @@ function Kitsune(x, y){
 				}
 			}
 
-			var imgX = el.x + i - 1; //x value of the stream start location 
-			var imgY = el.y + yStart; //y value of the stream start location
+			var imgX = el.x + i - 1; //x value of the stream start location
+			var imgY = el.y + yStart - 1; //y value of the stream start location
 			var color = get(imgX, imgY); //gets color of that pixel 
 
 			var newStream = new Stream(imgX, imgY, color, maxDepth, paintWidth); //creates new stream 
