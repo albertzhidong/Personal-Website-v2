@@ -179,12 +179,17 @@ body{
 /*	width: 55%;
 	padding: 6.5% 0% 0% 2%;*/
 	width: 100vw;
-	padding: 6.5% 45% 0% 2%;
+	padding: 6.5% 40% 0% 2%;
+	left: 28%;
 	position: fixed;
 	z-index: 4;
 	background-color: $clear;
 	overflow-y: auto;
 	height: 100%;
+
+	div:first-of-type{
+		margin-top: 2%;
+	}
 
 	@include responsive(mediumscreen){
 		width: 75%;
