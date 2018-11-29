@@ -818,6 +818,7 @@ body{
 	.play_singular{
 		width: 20vw;
 		padding: 1% 0%;
+		cursor: pointer;
 
 	    @include responsive(mediumscreen){
 	    	width: 35vw;
