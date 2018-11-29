@@ -4,14 +4,14 @@ var victimImg;
 var paintWidth = 7;
 
 var canvasX = 1050;
-var canvasY = 1034; //448 
+var canvasY = 1034;  
 
 var dripXStart = 10;
 var dripXLimit = 1040; //x coordinate of when the drip area should stop
 
 //limits area where the drip can start on the y
 var yStartStart = 5; 
-var yStartLimit = 900;
+var yStartLimit = 589; //599 
 
 var depthLimit = canvasY - 20; //lowest point it can fall to 
 var lengthLimit = 100; //length of stream 
@@ -20,7 +20,7 @@ var victim;
 
 function setup() {
 	createCanvas(canvasX, canvasY);
-	victimImg = loadImage('../media/cranberries4.png');
+	victimImg = loadImage('../media/cranberries5.png');
 	victim = new Victim(0, 0);
 }
 
