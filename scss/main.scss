@@ -112,6 +112,15 @@ body{
 
 	p{
 		margin-top: 2%;
+		line-height: 150%;
+
+		@include responsive(smallscreen){
+			margin-top: 4%;
+		}
+
+		a{
+			color: $textblack;
+		}
 	}
 
 	@include responsive(largescreen){
@@ -123,7 +132,7 @@ body{
 	}
 
 	@include responsive(smallscreen){
-		padding-top: 12.5vh;
+		padding-top: 12vh;
 		padding-right: 20vh;
 	}
 }
@@ -176,11 +185,9 @@ body{
 }
 /*---------------------------About Page---------------------------*/
 #about{
-/*	width: 55%;
-	padding: 6.5% 0% 0% 2%;*/
 	width: 100vw;
-	padding: 6.5% 40% 0% 2%;
-	left: 28%;
+	padding: 6% 40% 0% 2%;
+	left: 2%;
 	position: fixed;
 	z-index: 4;
 	background-color: $clear;
@@ -219,7 +226,7 @@ body{
 		list-style-type: square;
 	}
 
-	.aboutText{
+	.aboutTextDiv{
 		margin-top: 3%;
 		line-height: 150%;
 
@@ -267,7 +274,7 @@ body{
 	z-index: 2;
 }
 
-#kitsune{
+#dripImg{
 	position: fixed;
 	display: flex;
 	justify-content: flex-end;
@@ -281,7 +288,7 @@ body{
 
 	img{
 		position: absolute;
-		opacity: .5;
+/*		opacity: .5;*/
 		width: 40%;
 		top: 0px;
 		right: 0px;
