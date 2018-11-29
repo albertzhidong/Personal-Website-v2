@@ -198,10 +198,6 @@ body{
 		margin-top: 2%;
 	}
 
-	@include responsive(xlargescreen){
-		left: 18%;
-	}
-
 	@include responsive(largescreen){
 		left: 0%;
 	}
