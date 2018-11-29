@@ -116,7 +116,7 @@ $(document).ready(function(){
 	});
 
 	//modal for tinks
-	$('.tink').click(function(){
+	$('.play_singular').click(function(){
 		var modal = document.getElementById('myModal');
 		var src = $(this).find('.imgpic').find('.mediasrc');
 		var captionText = document.getElementById('caption');
