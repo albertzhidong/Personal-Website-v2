@@ -68,7 +68,7 @@ function Victim(x, y){
 
 			var streamX = el.x + i - (paintWidth); //x value of the stream start location
 			var streamY = el.y + yStart; //y value of the stream start location
-			var color = get(imgX, imgY); //gets color of that pixel 
+			var color = get(streamX, streamY); //gets color of that pixel 
 
 			var newStream = new Stream(streamX, streamY, color, maxDepth, paintWidth); //creates new stream 
 			streams.push(newStream);
