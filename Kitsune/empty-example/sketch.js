@@ -7,11 +7,11 @@ var canvasX = 550;
 var canvasY = 749; 
 
 var dripXStart = 1;
-var dripXLimit = 374; //x coordinate of when the drip area shoudl stop
+var dripXLimit = 374; //x coordinate of when the drip area should stop
 
 //limits area where the drip can start on the y
 var yStartStart = 25; 
-var yStartLimit = 620;
+var yStartLimit = 560;
 
 var depthLimit = canvasY - 20; //lowest point it can fall to 
 var lengthLimit = 100; //length of stream 
@@ -66,11 +66,11 @@ function Victim(x, y){
 				}
 			}
 
-			var imgX = el.x + i - 1; //x value of the stream start location
-			var imgY = el.y + yStart - 1; //y value of the stream start location
+			var streamX = el.x + i - (paintWidth); //x value of the stream start location
+			var streamY = el.y + yStart; //y value of the stream start location
 			var color = get(imgX, imgY); //gets color of that pixel 
 
-			var newStream = new Stream(imgX, imgY, color, maxDepth, paintWidth); //creates new stream 
+			var newStream = new Stream(streamX, streamY, color, maxDepth, paintWidth); //creates new stream 
 			streams.push(newStream);
 		}	
 
