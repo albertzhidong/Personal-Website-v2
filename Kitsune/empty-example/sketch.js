@@ -66,7 +66,7 @@ function Victim(x, y){
 				}
 			}
 
-			var streamX = el.x + i - (paintWidth / 2); //x value of the stream start location
+			var streamX = el.x + i - 1; //x value of the stream start location
 			var streamY = el.y + yStart; //y value of the stream start location
 			var color = get(streamX, streamY); //gets color of that pixel 
 
