@@ -2,8 +2,7 @@ $(document).ready(function(){
 	$('#main-menu').smartmenus();
 
 	$('.sm').find('li').find('a').click(function(){
-		if($(this).css('color') != 'rgb(52, 114, 255)'){
-			$(this).css({'color':'rgb(52, 114, 255)'});
+		if($(this).hasClass('hover')){
 			$(this).removeClass('hover');
 			$(this).removeClass('hoverStart');
 			$(this).removeClass('hoverEnd');
@@ -215,3 +214,16 @@ $(document).ready(function(){
   //   }
   // }, 3500);
 // }
+
+	// $('.sm').find('li').find('a').click(function(){
+	// 	if($(this).css('color') != 'rgb(52, 114, 255)'){
+	// 		$(this).css({'color':'rgb(52, 114, 255)'});
+	// 		$(this).removeClass('hover');
+	// 		$(this).removeClass('hoverStart');
+	// 		$(this).removeClass('hoverEnd');
+	// 	} else{
+	// 		$(this).css({'color':'initial'});
+	// 		$(this).addClass('hover');
+	// 		$(this).addClass('hoverEnd');
+	// 	}	
+	// });

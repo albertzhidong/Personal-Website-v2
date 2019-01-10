@@ -145,16 +145,16 @@ body{
 	top: 0;
 
 	img{
-		width: 7.5%;
+		width: 8%;
 		margin-left: 67.5%;
-		margin-top: 30%;
+		margin-top: 28%;
 
 		@include responsive(largescreen){
-			margin-top: 40%;
+			margin-top: 35%;
 		}
 
 		@include responsive(mediumscreen){
-			margin-top: 50%;
+			margin-top: 45%;
 			width: 12.5%;
 		}
 
@@ -458,6 +458,10 @@ body{
 
 .AppDHeader{
 	@include fullcover("../Media/Headers/AppDBackground.png");
+}
+
+.FDSHeader{
+	@include fullcover("../Media/Headers/FDSBackground.png");
 }
 
 .projecthome{
