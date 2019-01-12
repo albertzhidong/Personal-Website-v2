@@ -1,12 +1,12 @@
 .navText{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 500;
-	font-size: 1.35rem;
+	font-size: 1rem;
 	color: $textblack;
 }
 
 h1{
-	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-family: Georgia, HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	font-size: 4rem;
 	color: $textblack;
@@ -68,11 +68,11 @@ p, li{
 .AboutText{
 	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 	font-weight: 500;
-	font-size: .95rem;
+	font-size: .9rem;
 	line-height: 150%;
 
 	@include responsive(smallscreen){
-		font-size: .85rem;
+		font-size: .8rem;
 	}	
 }
 
@@ -106,6 +106,10 @@ p, li{
 	font-size: 1.5rem;
 }
 
+.Georgia{
+	font-family: Georgia, HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
 .black{
 	color:$blackblue !important;
 }
@@ -128,6 +132,10 @@ p, li{
 
 .heavyWeight{
 	font-weight: 500;
+}
+
+.normalWeight{
+	font-weight: 400;
 }
 
 .nolineheight{
@@ -175,8 +183,8 @@ p, li{
 
 	&::after{
 		height: .5rem;
-		left:.75rem;
-		top:.75rem;
+		left: .5rem;
+		top: .5rem;
 		content: "";
 		width: 100%;
 		position: absolute;
