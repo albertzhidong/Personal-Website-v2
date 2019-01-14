@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Albert Dong - Blog</title>
+	<link rel="canonical" href="https://www.albertdong.com"/>
+	<link rel="icon" href="Media/Self/PersonalLogo.png">
+	<link rel="apple-touch-icon" href="Media/Self/PersonalLogo.png">
+
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<meta name='title' content='Albert Dong - Product Designer'>
+	<meta name="author" content="Albert Dong">
+	<meta name="description" content="Product Designer, Design Partner @ Dorm Room Fund">
+	<meta http-equiv="Expires" content="1"/>
+
+	<link rel="stylesheet" href="css/reset.min.css">
+	<link rel="stylesheet" href="css/animsition.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- SmartMenus core CSS (required) -->
+	<link href='css/sm-core-css.min.css' rel='stylesheet' type='text/css' />
+
+	<meta name="keywords" content="Albert Dong, Portfolio Site, Albert, Dong, Dorm Room Fund">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://albertdong.com">
+	<meta prefix="og: http://ogp.me/ns#" property="og:type" content="Website">
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Albert Dong - Product Designer">
+	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Product Designer, Design Partner @ Dorm Room Fund">
+	<meta prefix="og: http://ogp.me/ns#" property="og:image" content="Media/Self/PersonalLogo.png">
+	<meta prefix="og: http://ogp.me/ns#" property="og:image:alt" content="Media/Self/ProfilePicture.png">
+</head>
+<body>
+	<div class="animsition" data-animsition-in-class="fade-in-up-sm" data-animsition-in-duration="1000"> 
+		<div class="navText navBar navContent">
+			<ul id="main-menu" class="sm">
+			  	<li><a href="index.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out-down-sm" data-animsition-out-duration="500">Works</a></li>
+				<li><a href="blog.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="500">Blog</a></li>
+			  	<li><a href="about.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out-right-sm" data-animsition-out-duration="500">About</a></li>
+			</ul>
+		</div>
+		<div class="navText navBar navName navContent">
+			<ul id="main-menu" class="sm sm-left">
+				<li><a href="index.html" class="navText hover hoverStart animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="500" id="navAlbert">Albert Dong</a></li>
+			</ul>
+		</div>
+
+		<div id="blog">
+			<div class='article'>
+				<h2 class="Georgia normalWeight">The Future of Gesture</h2>
+				<div class="subhead">
+					<p class="BylineText gray heavyWeight">January 14, 2019</p>
+					<p class="BylineText gray heavyWeight">2 min</p>
+				</div>
+				<p class="bodyCopy">Working in AR has led me to spend an unnatural amount of time thinking about new interaction paradigms that may arise alongside this new technology. One of them being gesture-based interactions.</p>
+				<p class="bodyCopy">Looking at the current major interaction paradigms, we can abstract two major commonalities from them that are crucial for their continued existence: 1) they are agnostic across most population demographics — age, language, and major factors native to the human condition and 2) they require relatively similar levels of effort in the general case and a distinctly lower level of effort in their specific niche cases.</p>
+				<p class="bodyCopy">The traditional notions of gesture-based interactions, as exampled by Microsoft Kinect and the cult-classic -- Minority Report, run antithetical to both of these commonalities.</p>
+				<ol>
+					<li>Present gestural language is segmented across demographics. Like memes, gestures are created by the collective consciousness of a group and are only used + understood within the group. Those outside the group lack the context and mental models to interpret gestures of other groups. Demographical divides create the most obvious groups - splintering populations across age, race, and culture.</li>
+					<li>Present gestural language also contains multiple instances of complex movements that are exhausting at scale. i.e. pointing with the finger to select objects or placing a finger to the lips. Generally, all full-arm movements require a level of effort an order of magnitude above wrist-only movements (writing) and finger-only movements (tapping).</li>
+				</ol>
+				<p class="bodyCopy">My personal thesis is that for a gesture-based interaction paradigm to grow beyond gimmicky use cases, the interaction has to be comprised of a set of primitives in which people can put together (given context) to form the command they want AND it has to be a non-trivial improvement above existing paradigms in non-niche scenarios.</p>
+				<p class="bodyCopy">A few months ago, I was fortunate to have the opportunity to further develop this thesis by joining the team at <a href="https://pisontechnology.com/" class="hyperlink hyperlinkStart nowrap textblack" target="_blank" rel="noopener">Pison Technologies</a> as their first interaction designer. Our research surrounds decoding nerve and muscle signals sent to our hands. Coupling these signals with an IMU, we can understand a broad range of finger, wrist, and arm movements that were made by the user.</p>
+				<p class="bodyCopy">Unlike traditional notions of gestural interfaces that are translated by cameras using computer vision, Pison gestures are translated by a small wearable wristband, allowing for commands to be sent discreetly and effortlessly from spatially-agnostic locations — commands as simple as a flick of a finger.</p>
+				<p class="bodyCopy">I’m excited to see what we create.</p>
+				<hr/>
+			</div>
+		</div>
+
+	</div>
+
+		<!-- Javscript -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/animsition.min.js"></script>
+	<script src="js/app.min.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+	  $(".animsition").animsition();
+	});
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117900218-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-117900218-1');
+	</script>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+
+	<!-- SmartMenus jQuery plugin -->
+	<script src="js/jquery.smartmenus.min.js" type="text/javascript"></script>
+</body>
