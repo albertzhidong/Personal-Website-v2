@@ -991,10 +991,25 @@ body{
 /*---------------------------Blog---------------------------*/
 
 #blog{
-	padding: 20vh 40vw 0vh 10vw;
+	padding: 17.5vh 40vw 0vh 10vw;
+
+	@include responsive(mediumscreen){
+		padding: 20vh 25vw 0vh 7.5vw;
+	}
+
+	@include responsive(smallscreen){
+		padding: 20vh 7.5vw 0vh 7.5vw;
+	}
 }
 
 .article{
+
+	h2{
+		@include responsive(smallscreen){
+			line-height: 125%;
+			padding-bottom: 1%;
+		}
+	}
 
 	.subhead{
 		display: flex;
@@ -1007,6 +1022,11 @@ body{
 
 	p{
 		margin-bottom: 2.5%;
+
+		@include responsive(smallscreen){
+			margin-bottom: 3.5%;
+		}
+
 	}
 
 	ol{
@@ -1014,6 +1034,10 @@ body{
 
 		li{
 			margin-bottom: 2.5%;
+
+			@include responsive(smallscreen){
+				margin-bottom: 3.5%;
+			}
 		}
 	}
 
@@ -1027,19 +1051,106 @@ body{
 	}
 }
 
+#graybackground{
+
+	display: none;
+	position: fixed;
+	opacity: 0;
+
+	@include responsive(largescreen){
+		background-color: $blackblue;
+		width: 100vw;
+		height: 100vh;
+		z-index: 2;
+		opacity: .7;
+	}
+}
+
+#sidebarSub{
+	display: none;
+	opacity: 0;
+	position: fixed;
+	width: 20vw;
+	top: 17.5vh;
+	left: 70vw; 
+	z-index: 3;
+	box-shadow: 0px .5px 1px $babywolfgray;
+	background-color: $fauxwhite;
+
+	@include responsive(largescreen){
+		width: 50vw;
+		left: 25vw;
+		top: 25vh;
+	}
+
+	@include responsive(smallscreen){
+		width: 80vw;
+		left: 10vw;
+		top: 20vh;
+	}
+
+	#subtext{
+		padding: 12.5% 10% 10% 10%;
+
+		p{
+			margin: 3% 0% 3% 0%;
+			font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
+		}
+	}
+
+	#signup{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		input, button{
+			width: 100%;
+			font-weight: 400;
+			font-size: .9rem;
+			line-height: 125%;
+
+			@include responsive(smallscreen){
+				font-size: .75rem;
+			}	
+		}
+
+		input{
+			color: $wolfgray;
+			padding-left: 1%;
+			border: none;
+			padding: 3% 10%;
+		}
+
+		button{
+			background-color: #fcf113; 
+			color: $textblack;
+			border: none;
+			line-height: 100%;
+			padding: 4.5% 0% 4% 0%;
+
+			@include responsive(largescreen){
+				padding: 3.5% 0% 3% 0%;
+			}
+		}
+	}
+}
 
 
+/*
+	.sidebarDiv{
+		position: fixed;
+		top: 15vh;
+		left: 7.5vw;
+		z-index: 2;
+		padding: 1vh .75vw 0vh .75vw;
+		width: 15vw;
+		display: none;
+		opacity: 0;
+		background-color: inherit;
+		min-height: 22.5vh;
+*/
 
 
-
-
-
-
-
-
-
-
-
-
+//move the table of contents a bit more to the right so more gridlike
 
 

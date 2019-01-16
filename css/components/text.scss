@@ -1,6 +1,5 @@
 .navText{
-	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-	font-weight: 500;
+	font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
 	font-size: 1rem;
 	color: $textblack;
 }
@@ -18,8 +17,7 @@ h1{
 }
 
 h2{
-	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-	font-weight: 500;
+	font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
 	font-size: 3rem;
 	color: $textblack;
 	line-height: 150%;
@@ -30,8 +28,7 @@ h2{
 }
 
 h3{
-	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-	font-weight: 500;
+	font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
 	font-size: 2rem;
 	color: $textblack;
 	line-height: 150%;
@@ -42,8 +39,7 @@ h3{
 }
 
 h4{
-	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-	font-weight: 500;
+	font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
 	font-size: 1.5rem;
 	color: $textblack;
 	line-height: 150%;
@@ -58,7 +54,7 @@ p, li{
 	font-weight: 400;
 	font-size: 1.1rem;
 	color: $textblack;
-	line-height: 150%;
+	line-height: 125%;
 
 	@include responsive(smallscreen){
 		font-size: 1rem;
@@ -66,8 +62,7 @@ p, li{
 }
 
 .AboutText{
-	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-	font-weight: 500;
+	font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
 	font-size: .9rem;
 	line-height: 150%;
 
@@ -91,11 +86,6 @@ p, li{
 	line-height: 100%;
 }
 
-@font-face{
-	font-family: CircularStd-Book; 
-	src: url('../Media/Fonts/CircularStd-Book.otf');
-}
-
 .Circular{
 	font-family: CircularStd-Book, Helvetica, Arial, sans-serif;
 	text-align: center;
@@ -108,6 +98,10 @@ p, li{
 
 .Georgia{
 	font-family: Georgia, HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+.condensed{
+	font-family: HelveticaNeue-BdCo;
 }
 
 .black{
@@ -136,6 +130,10 @@ p, li{
 
 .normalWeight{
 	font-weight: 400;
+}
+
+.somelineheight{
+	line-height: 125%;
 }
 
 .nolineheight{
