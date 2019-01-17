@@ -145,7 +145,7 @@ $(document).ready(function(){
 
 	$(document).on('scroll', function() {
 		if($('#sidebarSub').css('display') == 'none'){
-			if($(window).height() < $(window).scrollTop() && subAppeared == false){
+			if($('#firstDivider').position().top < $(window).scrollTop() && subAppeared == false){
 				$('#sidebarSub').css({'opacity':'0'});
 				$('#sidebarSub').css({'display':'inherit'});
 				$('#sidebarSub').animate({'opacity':'100'}, 250);

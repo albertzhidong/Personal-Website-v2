@@ -1083,6 +1083,10 @@ body{
 		top: 25vh;
 	}
 
+	@include responsive(mediumscreen){
+		box-shadow: none;
+	}
+
 	@include responsive(smallscreen){
 		width: 80vw;
 		left: 10vw;
