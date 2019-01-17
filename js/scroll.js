@@ -43,7 +43,7 @@ function scrollTracker() { //use 2 min left rather than a ever changin percentag
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = Math.round((winScroll / height) * 100);
 
-  document.getElementById("scrollIndicator").innerHTML="<h4 class='black heavyWeight'>" + scrolled + "%</h4>";
+  // document.getElementById("scrollIndicator").innerHTML="<h4 class='black heavyWeight'>" + scrolled + "%</h4>";
 }
 
 	// $(document).on('scroll', function() {
