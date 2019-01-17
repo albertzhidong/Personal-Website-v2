@@ -1015,6 +1015,10 @@ body{
 		display: flex;
 		margin: 1.25% 0% 1% 0%;
 
+		@include responsive(smallscreen){
+			margin-bottom: 2%;
+		}
+
 		p{
 			margin-right: 2%;
 		}
