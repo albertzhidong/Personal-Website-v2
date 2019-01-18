@@ -54,7 +54,7 @@ p, li{
 	font-weight: 400;
 	font-size: 1.1rem;
 	color: $textblack;
-	line-height: 125%;
+	line-height: 150%;
 
 	@include responsive(smallscreen){
 		font-size: 1rem;
