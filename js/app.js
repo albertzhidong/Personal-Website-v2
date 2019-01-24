@@ -114,26 +114,36 @@ $(document).ready(function(){
 		$(this).find('.imgtext').animate({'opacity':'100'}, 300);
 	});
 
-	//modal for tinks
-	$('.play_singular').click(function(){
-		var modal = document.getElementById('myModal');
-		var src = $(this).find('.imgpic').find('.mediasrc');
-		var captionText = document.getElementById('caption');
-
-	    modal.style.display = "block";
-	    if(src.is('img')){
+	$('img').click(function(){
+		if($(this).hasClass('canEnlarge')){
+			var modal = document.getElementById('myModal');
+		    modal.style.display = "block";
 			var modalImg = document.getElementById("modalImg");
 	    	modalImg.style.display = "block";
-	    	modalImg.src = src.attr('src');
+	    	modalImg.src = $(this).attr('src');
 	    }
-	    else if(src.is('video')){
-	    	var modalVideo = document.getElementById("modalVideo");
-	    	modalVideo.style.display = "block";
-	    	modalVideo.src = src.attr('src');
-	    	modalVideo.play();
-	    }
-	    captionText.innerHTML = src.attr('alt');
 	});
+
+	//modal for tinks
+	// $('img').click(function(){
+	// 	var modal = document.getElementById('myModal');
+	// 	var src = $(this).find('.imgpic').find('.mediasrc');
+	// 	var captionText = document.getElementById('caption');
+
+	//     modal.style.display = "block";
+	//     if(src.is('img')){
+	// 		var modalImg = document.getElementById("modalImg");
+	//     	modalImg.style.display = "block";
+	//     	modalImg.src = src.attr('src');
+	//     }
+	//     else if(src.is('video')){
+	//     	var modalVideo = document.getElementById("modalVideo");
+	//     	modalVideo.style.display = "block";
+	//     	modalVideo.src = src.attr('src');
+	//     	modalVideo.play();
+	//     }
+	//     captionText.innerHTML = src.attr('alt');
+	// });
 
 	$('#myModal').click(function(){
 		 $(this).css({'display':'none'});

@@ -759,6 +759,18 @@ body{
 				justify-content: center;
 				align-items: center;
 			}
+
+			ul{
+				list-style-type: disc;
+
+				li{
+					margin-bottom: 1.25%;
+
+					@include responsive(smallscreen){
+						margin-bottom: 2%;
+					}
+				}
+			}
 		}
 	}
 }
@@ -799,7 +811,7 @@ body{
 }
 
 .copyright1{
-	padding-left: 35%;
+	padding-left: 28%;
 	padding-bottom: 1%;
 	background-color: $fauxwhite;
 	font-size: .9rem;
@@ -925,7 +937,7 @@ body{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 9999; /* Sit on top */
-    padding-top: 10%; /* Location of the box */
+    padding-top: 7.5%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100vw; /* Full width */
@@ -939,19 +951,14 @@ body{
 .modal-content {
     margin: auto;
     display: none;
-    width: 35%;
-    max-width: 700px;
+    width: 70%;
 
 	@include responsive(mediumscreen){
-		width: 50%
-	}
-
-	@include responsive(mediumscreen){
-		width: 70%
+		width: 75%
 	}
 
 	@include responsive(smallscreen){
-		width: 90%
+		width: 80%
 	}
 }
 

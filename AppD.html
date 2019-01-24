@@ -68,14 +68,13 @@
 		</div>
 
 		<div class="projectBody">
-			<div class="sidebarDiv extendSB">
+			<div class="sidebarDiv">
 				<a href="#overview"><p class="heavyWeight">Overview</p></a>
 				<a href="#role"><p class="heavyWeight">My Role</p></a>
 				<a href="#rampup"><p class="heavyWeight">Ramping Up</p></a>
 				<a href="#initialresearch"><p class="heavyWeight">Research</p></a>
 				<a href="#designresearch"><p class="heavyWeight">Design</p></a>
 				<a href="#highlight"><p class="heavyWeight">Change Commits</p></a>
-				<a href="#reflections"><p class="heavyWeight">Reflections</p></a>
 <!-- 				<div id="scrollIndicator">
 					<h4 class="heavyWeight">0%</h4>
 				</div> -->
@@ -125,13 +124,13 @@
 					<p class="bodyCopy">After another iteration of designs, I decided to place them in front of actual users. (Once again, finding users in enterprise 🙃)</p>
 					<p class="bodyCopy italic">Sample v2 screenshots —</p>
 					<div class="singleImg">
-						<img src="Media/AppD/i2_1.png" alt="iteration 2 screenshot">
+						<img class="canEnlarge" src="Media/AppD/i2_1.png" alt="iteration 2 screenshot">
 					</div>
 					<div class="singleImg">
-						<img src="Media/AppD/i2_2.png" alt="iteration 2 screenshot">
+						<img class="canEnlarge" src="Media/AppD/i2_2.png" alt="iteration 2 screenshot">
 					</div>
 					<div class="singleImg">
-						<img src="Media/AppD/i2_3.png" alt="iteration 2 screenshot">
+						<img class="canEnlarge" src="Media/AppD/i2_3.png" alt="iteration 2 screenshot">
 					</div>
 					<p class="bodyCopy">For iteration 2, I wanted to test out a new hypothesis. While I knew people generally hated the idea of “states” given the amount of cognitive overhead it entails, I thought that the design pattern might actually have a place in the bulky enterprise products.</p>
 					<p class="bodyCopy">Given the fact that such a small percentage of users interact with in-app help, it didn’t make sense for it to take up valuable real estate on the screen. </p>
@@ -158,11 +157,14 @@
 					<p class="bodyCopy"> This fell right in line with the thesis derived from other teams surrounding the future personalization of the product as an extension of each user.</p>
 					<p class="bodyCopy">What do techies like? Code commits. What might AppD techies like? Change commits.</p>
 					<p class="bodyCopy">While this idea would need to be fleshed out more in order for it to be successful, early user testing has shown favorable results that validates further work on the concept.</p>
-
 <!-- 					<h4 id="reflections">Final Thoughts</h4>
 					<p class="bodyCopy">I came into the summer internship wanting a radically different design experience than the ones I had previously. I started in the consumer startup world - and loved it - but was itching to see what else the industry had to offer. So for the summer of 2018, I jumped to other side of the spectrum — post-IPO enterprise.</p>
 					<p class="bodyCopy">It was good experience and I'm grateful to have had it. However, I learned that large companies isn't my niche and that product/industry is more important to me than I previously thought. I think I knew that going in -.</p> -->
 			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+		  <img class="modal-content" id="modalImg"/>
 		</div>
 
 		<!-- Footer -->
@@ -173,6 +175,16 @@
 	<script src="js/jquery-2.2.4.min.js"></script>
 	<script src="js/app.min.js"></script>
 	<script src="js/scroll.min.js"></script>
+
+	<!-- Pre-Loading -->
+	<script type="text/javascript">
+		var i1 = new Image();
+		var i2 = new Image();
+		var i3 = new Image();
+		i1.src = 'i2_1.png';
+		i2.src = 'i2_2.png';
+		i3.src = 'i2_3.png';
+	</script>
 
 	<!-- Page Transitions -->
 	<script src="js/animsition.min.js" charset="utf-8"></script>
