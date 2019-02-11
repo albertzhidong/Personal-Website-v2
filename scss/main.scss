@@ -513,6 +513,7 @@ body{
 
 		@include responsive(mediumscreen){
 			padding-top: 3%;
+			line-height: 125%;
 		}
 	}
 
@@ -1231,11 +1232,15 @@ body{
 
 
 	.label{
-		width: 17vw;
+		width: 20vw;
 		display: flex;
 		flex-direction: column;
 		max-height: 80vh;
 		overflow-y: scroll;
+
+		@include responsive(largescreen){
+			width: 30vw;
+		}
 
 		@include responsive(mediumscreen){
 			width: 100%;
@@ -1258,7 +1263,7 @@ body{
 	}
 
 	.artefact{
-		width: 63vw; //100-17-10-10
+		width: 60vw; //100-17-10-10
 		height: 90vh;
 		display: flex;
 		align-items: center;
@@ -1274,6 +1279,10 @@ body{
 
 		.largeimg{
 			width: 100%;
+		}
+
+		@include responsive(largescreen){
+			width: 50vw;
 		}
 
 		@include responsive(mediumscreen){
