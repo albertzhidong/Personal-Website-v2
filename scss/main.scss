@@ -464,8 +464,21 @@ body{
 	@include fullcover("../Media/Headers/AppDBackground.png");
 }
 
-.FDSHeader{
+/*.FDSHeader{
 	@include fullcover("../Media/Headers/FDSBackground.png");
+}*/
+
+.FDSHeader{
+	//background-color: rgba(40,79,74,1); //background-color: rgba(83,132,57,1);
+	@include fullcover("../Media/Headers/FDSBackground2.jpg");
+}
+
+.AustriaHeader{
+	background-color: rgba(202, 174, 145, 1);
+}
+
+.PisonHeader{
+	background-color: rgba(10,10,10,1);
 }
 
 .projecthome{
@@ -492,6 +505,15 @@ body{
 		width: auto;
 		background-color: $blackopaque;
 		line-height: 125%;
+	}
+
+	h2{
+		line-height: 90%;
+		padding-top: 2%;
+
+		@include responsive(mediumscreen){
+			padding-top: 3%;
+		}
 	}
 
 	.projectname{
@@ -1176,7 +1198,90 @@ body{
 		min-height: 22.5vh;
 */
 
+/*---------------------------Project 2---------------------------*/
 
-//move the table of contents a bit more to the right so more gridlike
+.projectintro2{
 
+	position: relative;
+	width: 80vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding-bottom: 2.5vh;
+
+	@include responsive(mediumscreen){
+		height: 95vh;
+		width: 80vw;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: flex-start;
+		padding-bottom: 0;
+	}
+
+	@include responsive(smallscreen){
+		height: 95vh;
+		width: 90vw;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: flex-start;
+		padding-bottom: 0;
+	}
+
+
+	.label{
+		width: 17vw;
+		display: flex;
+		flex-direction: column;
+		max-height: 80vh;
+		overflow-y: scroll;
+
+		@include responsive(mediumscreen){
+			width: 100%;
+			max-height: 80vh;
+			display: inline-block;
+			overflow-y: inherit;
+			margin: 2% 3%;
+		}
+
+	}
+
+	.labelbg{
+		padding: 2% 1%;
+		background-color: rgba(0,0,0,.8);
+
+		@include responsive(mediumscreen){
+			padding: 5% 3%;
+			margin: 0;
+		}
+	}
+
+	.artefact{
+		width: 63vw; //100-17-10-10
+		height: 90vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img{
+			width: 50%;
+
+			@include responsive(mediumscreen){
+				width: 90%;
+			}
+		}
+
+		.largeimg{
+			width: 100%;
+		}
+
+		@include responsive(mediumscreen){
+			width: 90vw;
+			height: auto;
+			padding-bottom: 5vh;
+			padding-top: 5vh;
+		}
+	}
+}
 
