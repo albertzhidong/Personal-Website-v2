@@ -20,7 +20,7 @@ var victim;
 
 function setup() {
 	createCanvas(canvasX, canvasY);
-	victimImg = loadImage('../media/cranberries5.png');
+	victimImg = loadImage('../media/cranberries6.png');
 	victim = new Victim(0, 0);
 }
 
