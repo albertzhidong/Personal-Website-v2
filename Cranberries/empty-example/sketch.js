@@ -31,7 +31,7 @@ function draw() {
 
 setTimeout(function(){
 	victim.prepStreams();
-}, 2000);
+}, 1750);
 
 
 function Victim(x, y){
