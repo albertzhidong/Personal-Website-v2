@@ -139,22 +139,26 @@ body{
 
 #homepagePic{
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	z-index: 1;
 	top: 0;
 
 	img{
 		width: 9%;
 		margin-left: 65%;
-		margin-top: 26%;
+		margin-top: 27%;
+
+		@include responsive(xlargescreen){
+			margin-top: 29%;
+		}
 
 		@include responsive(largescreen){
 			margin-top: 35%;
 		}
 
 		@include responsive(mediumscreen){
-			margin-top: 45%;
+			margin-top: 47.5%;
 			width: 12.5%;
 		}
 
