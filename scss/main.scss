@@ -147,23 +147,19 @@ body{
 	img{
 		width: 9%;
 		margin-left: 65%;
-		margin-top: 27%;
+		margin-top: 50vh;
 
 		@include responsive(xlargescreen){
-			margin-top: 29%;
+			margin-top: 55vh;
 		}
 
 		@include responsive(largescreen){
-			margin-top: 35%;
-		}
-
-		@include responsive(xmediumscreen){
-			margin-top: 40%;
+			margin-top: 57.5vh;
 			width: 10%;
 		}
 
 		@include responsive(mediumscreen){
-			margin-top: 47.5%;
+			margin-top: 60vh;
 			width: 12.5%;
 		}
 
@@ -171,6 +167,7 @@ body{
 			width: 55%;
 			margin-left: 30%;
 			opacity: .4;
+			margin-top: 32.5vh;
 		}
 	}
 }
