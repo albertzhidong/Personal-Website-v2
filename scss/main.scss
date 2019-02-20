@@ -139,8 +139,8 @@ body{
 
 #homepagePic{
 	position: absolute;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	z-index: 1;
 	top: 0;
 
@@ -155,6 +155,11 @@ body{
 
 		@include responsive(largescreen){
 			margin-top: 35%;
+		}
+
+		@include responsive(xmediumscreen){
+			margin-top: 40%;
+			width: 10%;
 		}
 
 		@include responsive(mediumscreen){
