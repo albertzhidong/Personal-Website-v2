@@ -289,6 +289,7 @@ body{
 	background-color: $clear;
 
 	@include responsive(smallscreen){
+		left: -100px;
 		opacity: .5;
 	}
 
