@@ -150,16 +150,17 @@ body{
 		margin-top: 50vh;
 
 		@include responsive(xlargescreen){
-			margin-top: 55vh;
-		}
-
-		@include responsive(largescreen){
-			margin-top: 57.5vh;
+			margin-top: 52.5vh;
 			width: 10%;
 		}
 
+		@include responsive(largescreen){
+			margin-top: 55vh;
+			width: 11%;
+		}
+
 		@include responsive(mediumscreen){
-			margin-top: 60vh;
+			margin-top: 57.5vh;
 			width: 12.5%;
 		}
 
@@ -289,7 +290,6 @@ body{
 	background-color: $clear;
 
 	@include responsive(smallscreen){
-		left: -100px;
 		opacity: .5;
 	}
 
