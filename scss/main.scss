@@ -1088,6 +1088,18 @@ body{
 		}
 	}
 
+	ul{
+		list-style-type: square;
+
+		li{
+			margin-bottom: 2.5%;
+
+			@include responsive(smallscreen){
+				margin-bottom: 3.5%;
+			}
+		}
+	}
+
 	hr {
 	    display: block;
 	    height: 1px;
