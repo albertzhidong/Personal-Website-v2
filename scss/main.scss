@@ -1189,34 +1189,96 @@ body{
 		}
 
 		button{
+			cursor: pointer;
 			background-color: #fcf113; 
 			color: $textblack;
 			border: none;
 			line-height: 100%;
 			padding: 4.5% 0% 4% 0%;
 			margin: 0;
+			transition: .6s;
 
 			@include responsive(largescreen){
 				padding: 3.5% 0% 3% 0%;
+			}
+
+			@include responsive(smallscreen){
+				padding: 4% 0% 3.5% 0%;
+			}
+
+			&:hover{
+				background-color: #000000;
+				color: #FFFFFF;
 			}
 		}
 	}
 }
 
+#bottomSub{
+	display: none;
+	width: 100vw;
+	background-color: $fauxwhite;
+	padding: 0;
 
-/*
-	.sidebarDiv{
-		position: fixed;
-		top: 15vh;
-		left: 7.5vw;
-		z-index: 2;
-		padding: 1vh .75vw 0vh .75vw;
-		width: 15vw;
-		display: none;
-		opacity: 0;
-		background-color: inherit;
-		min-height: 22.5vh;
-*/
+	@include responsive(smallscreen){
+		display: inline-block;
+	}
+
+	#subtext{
+		padding: 0% 10% 10% 10%;
+
+		p{
+			margin: 3% 0% 3% 0%;
+			font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
+		}
+	}
+
+	#signup{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		margin-bottom: 0;
+
+		input, button{
+			width: 100%;
+			font-weight: 400;
+			font-size: .9rem;
+			line-height: 125%;
+
+			@include responsive(smallscreen){
+				font-size: .75rem;
+			}	
+		}
+
+		input{
+			color: $wolfgray;
+			padding-left: 1%;
+			border: none;
+			padding: 3% 10%;
+		}
+
+		button{
+			cursor: pointer;
+			background-color: #fcf113; 
+			color: $textblack;
+			border: none;
+			line-height: 100%;
+			padding: 4.5% 0% 4% 0%;
+			margin: 0;
+			transition: .6s;
+
+			@include responsive(largescreen){
+				padding: 3.5% 0% 3% 0%;
+			}
+
+			&:hover{
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+		}
+	}
+}
 
 /*---------------------------Project 2---------------------------*/
 
