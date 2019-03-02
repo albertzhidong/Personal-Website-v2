@@ -1070,6 +1070,10 @@ body{
 	p{
 		margin-bottom: 2.5%;
 
+		&:last-of-type{
+			margin-bottom: 0%;
+		}
+
 		@include responsive(smallscreen){
 			margin-bottom: 3.5%;
 		}
@@ -1099,15 +1103,15 @@ body{
 			}
 		}
 	}
+}
 
-	hr {
-	    display: block;
-	    height: 1px;
-	    border: 0;
-	    border-top: 2px solid #ccc;
-	    margin: 1em 0;
-	    margin: 7.5% 0%;
-	}
+hr {
+    display: block;
+    height: .5px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    margin: 7.5% 0%;
 }
 
 #graybackground{
@@ -1275,6 +1279,80 @@ body{
 			&:hover{
 				background-color: #000000;
 				color: #FFFFFF;
+			}
+		}
+	}
+}
+
+#midSub{
+	width: 100%;
+	background-color: $fauxwhite;
+	padding: 1% 0% 0% 0%;
+
+	#subtext{
+
+		margin-bottom: 2%;
+
+		p{
+			font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
+		}
+	}
+
+	hr:first-of-type{
+		margin-bottom: 2%;
+
+		@include responsive(smallscreen){
+			margin-bottom: 3%;
+		}
+	}
+
+	hr:last-of-type{
+		margin-top: 2%;
+	}
+
+	#signup{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 0;
+		align-items: flex-end;
+
+		input, button{
+			font-weight: 400;
+			font-size: .9rem;
+			line-height: 125%;
+
+			@include responsive(smallscreen){
+				font-size: .75rem;
+			}	
+		}
+
+		input{
+			width: 80%;
+			color: $wolfgray;
+			border: none;
+			padding: 1% 0% 0% 0%;
+		}
+
+		button{
+			width: 20%;
+			cursor: pointer;
+			background-color: #fcf113; 
+			color: $textblack;
+			border: none;
+			line-height: 100%;
+			transition: .6s;
+			margin: 0;
+			padding: 1.1% 0% 1% 0%;
+
+			&:hover{
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+
+			@include responsive(mediumscreen){
+				padding: 1.5% .5% 1.4% .5%;
 			}
 		}
 	}
