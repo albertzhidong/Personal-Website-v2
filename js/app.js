@@ -188,6 +188,11 @@ $(document).ready(function(){
 		});
 		$(".hyperlink").addClass("hyperlinkStart");
 	})
+
+	$('#submit-form').click(function(){
+		alert("Thanks for subscribing!");
+		$(this).parent().find(".email_address_form").val('');
+	})
 });
 
 //controls the flashing aniamtion of the arrow
