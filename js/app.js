@@ -189,7 +189,7 @@ $(document).ready(function(){
 		$(".hyperlink").addClass("hyperlinkStart");
 	})
 
-	$('#submit-form').click(function(){
+	$('.signup').find('button').click(function(){
 		alert("Thanks for subscribing!");
 		$(this).parent().find(".email_address_form").val('');
 	})

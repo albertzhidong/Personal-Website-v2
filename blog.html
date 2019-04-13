@@ -81,9 +81,9 @@
 					<p class="bodyCopy heavyWeight2 somelineheight">Follow From Your Inbox</p>
 				</div>
 
-				<form id="signup">
-					<input class="email_address_form" type="email" class="Georgia" name="email_address" placeholder="Your email here"/>
-					<button class="Georgia" type="submit" id="submit-form" value="Subscribe">Subscribe</button>
+				<form class="signup" id="signup1">
+					<input type="email" class="Georgia email_address_form" name="email_address" placeholder="Your email here"/>
+					<button class="Georgia" type="submit" id="submit-form1" value="Subscribe">Subscribe</button>
 				</form>
 				<hr />
 			</div>
@@ -212,13 +212,13 @@
 
 		<div id="sidebarSub">
 			<div id="subtext">
-				<h4 class="condensed">M ND THE GAP!</h4>
+				<h4 class="condensed">M ND THE GAP</h4>
 				<p class="BylineText somelineheight">A public archive of ideas I've found worth meditating on.</p>
 				<p class="BylineText somelineheight">Mileage may vary.</p>
 			</div>
-			<form id="signup">
-				<input class="email_address_form" type="email" class="Georgia" name="email_address" placeholder="Your email here"/>
-				<button class="Georgia" type="submit" id="submit-form" value="Subscribe">Subscribe</button>
+			<form class="signup" id="signup2">
+				<input type="email" class="Georgia email_address_form" name="email_address" placeholder="Your email here"/>
+				<button class="Georgia" type="submit" id="submit-form2" value="Subscribe">Subscribe</button>
 			</form>
 		</div>
 
@@ -242,9 +242,9 @@
 				<p class="BylineText somelineheight">Mileage may vary.</p>
 			</div>
 
-			<form id="signup">
-				<input class="email_address_form" type="email" class="Georgia" name="email_address" placeholder="Your email here"/>
-				<button class="Georgia" type="submit" id="submit-form" value="Subscribe">Subscribe</button>
+			<form class="signup" id="signup3">
+				<input type="email" class="Georgia email_address_form" name="email_address" placeholder="Your email here"/>
+				<button class="Georgia" type="submit" id="submit-form3" value="Subscribe">Subscribe</button>
 			</form>
 		</div>
 
@@ -278,16 +278,48 @@
 	<script src="js/jquery.smartmenus.min.js" type="text/javascript"></script>
 
 	<script>
-		var $form = $('form#signup'),
+		var $form1 = $('#signup1'),
 		    url = 'https://script.google.com/macros/s/AKfycbxXNTSevs2Mfxptkcw2T-Eirjl8ftuU3oHPv0Eo-nzvM1hNWGfm/exec'
 
-		$('#submit-form').on('click', function(e) {
+		$('#submit-form1').on('click', function(e) {
 		  e.preventDefault();
-		  var jqxhr = $.ajax({
+		  var jqxhr1 = $.ajax({
 		    url: url,
 		    method: "GET",
 		    dataType: "json",
-		    data: $form.serializeArray()
+		    data: $form1.serializeArray()
+		  }).success(
+		  );
+		})
+	</script>
+
+	<script>
+		var $form2 = $('#signup2'),
+		    url = 'https://script.google.com/macros/s/AKfycbxXNTSevs2Mfxptkcw2T-Eirjl8ftuU3oHPv0Eo-nzvM1hNWGfm/exec'
+
+		$('#submit-form2').on('click', function(e) {
+		  e.preventDefault();
+		  var jqxhr2 = $.ajax({
+		    url: url,
+		    method: "GET",
+		    dataType: "json",
+		    data: $form2.serializeArray()
+		  }).success(
+		  );
+		})
+	</script>
+
+	<script>
+		var $form3 = $('#signup3'),
+		    url = 'https://script.google.com/macros/s/AKfycbxXNTSevs2Mfxptkcw2T-Eirjl8ftuU3oHPv0Eo-nzvM1hNWGfm/exec'
+
+		$('#submit-form3').on('click', function(e) {
+		  e.preventDefault();
+		  var jqxhr3 = $.ajax({
+		    url: url,
+		    method: "GET",
+		    dataType: "json",
+		    data: $form3.serializeArray()
 		  }).success(
 		  );
 		})
