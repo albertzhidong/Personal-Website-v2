@@ -213,8 +213,19 @@
 
 		<div id="sidebarSub">
 			<div id="subtext">
+				<h4 class="condensed">M ND THE GAP!</h4>
+				<p class="BylineText somelineheight">A public archive of ideas I've found worth meditating on.</p>
+				<p class="BylineText somelineheight">Mileage may vary.</p>
+			</div>
+			<form id="email-form">
+				<input type="text" class="Georgia" name="email_address" placeholder="Your email here"/>
+				<button class="Georgia" type="submit" id="submit-form" value="Subscribe">Subscribe</button>
+			</form>
+		</div>
+
+<!-- 		<div id="sidebarSub">
+			<div id="subtext">
 				<h4 class="condensed">M ND THE GAP</h4>
-<!-- 				<p class="BylineText somelineheight">Weekly thoughts on tech, romances, and their intersections.</p> -->
 				<p class="BylineText somelineheight">A public archive of ideas I've found worth meditating on.</p>
 				<p class="BylineText somelineheight">Mileage may vary.</p>
 			</div>
@@ -223,7 +234,7 @@
 				<input type="hidden" value="1" name="embed"/>
 				<button class="Georgia" type="submit" value="Subscribe">Subscribe</button>
 			</form>
-		</div>
+		</div> -->
 
 		<div id="bottomSub">
 			<div id="subtext">
@@ -267,4 +278,21 @@
 
 	<!-- SmartMenus jQuery plugin -->
 	<script src="js/jquery.smartmenus.min.js" type="text/javascript"></script>
+
+	<script>
+		var $form = $('form#email-form'),
+		    url = 'https://script.google.com/macros/s/AKfycbxXNTSevs2Mfxptkcw2T-Eirjl8ftuU3oHPv0Eo-nzvM1hNWGfm/exec'
+
+		$('#submit-form').on('click', function(e) {
+		  e.preventDefault();
+		  var jqxhr = $.ajax({
+		    url: url,
+		    method: "GET",
+		    dataType: "json",
+		    data: $form.serializeObject()
+		  }).success(
+		    // do something
+		  );
+		})
+	</script>
 </body>
