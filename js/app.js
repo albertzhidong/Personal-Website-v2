@@ -78,6 +78,14 @@ $(document).ready(function(){
 		document.getElementById("hoverMedium").src="../Media/SocialMedia/medium.png";
 	});
 
+	$('#hoverDribbble').mouseenter(function(){
+		document.getElementById("hoverDribbble").src="../Media/SocialMedia/dribbble_select.png";
+	});
+
+	$('#hoverDribbble').mouseleave(function(){
+		document.getElementById("hoverDribbble").src="../Media/SocialMedia/dribbble.png";
+	});
+
 	$('.locked').click(function(){
 		$(this).find('img').toggleClass('lockcard');
 	});
