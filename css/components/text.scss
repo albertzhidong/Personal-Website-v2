@@ -216,6 +216,7 @@ p, li{
 	color: $fauxwhite;
 	position:relative;
 	display:inline;
+	left: 0;
 
 	&::after{
 		height: 3px; /*.15rem*/
@@ -226,7 +227,7 @@ p, li{
 		position: absolute;
 		z-index: 5;
 		transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
-		background: $blue;
+		background: $mist;
 	}
 }
 
@@ -235,6 +236,7 @@ p, li{
 	color: $fauxwhite;
 	position:relative;
 	display:inline;
+	left: 0;
 
 	&::after{
 		height: 3px;
@@ -245,7 +247,7 @@ p, li{
 		position: absolute;
 		z-index: 5;
 		transition: .3s all cubic-bezier(.25, .75, .5, 1.25);
-		background: $blue;
+		background: $mist;
 	}
 }
 
