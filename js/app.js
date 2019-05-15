@@ -70,12 +70,12 @@ $(document).ready(function(){
 		document.getElementById("hoverGoodreads").src="../Media/SocialMedia/goodreads.png";
 	});
 
-	$('#hoverMedium').mouseenter(function(){
-		document.getElementById("hoverMedium").src="../Media/SocialMedia/medium_select.png";
+	$('#hoverVsco').mouseenter(function(){
+		document.getElementById("hoverMedium").src="../Media/SocialMedia/vsco_select.png";
 	});
 
-	$('#hoverMedium').mouseleave(function(){
-		document.getElementById("hoverMedium").src="../Media/SocialMedia/medium.png";
+	$('#hoverVsco').mouseleave(function(){
+		document.getElementById("hoverMedium").src="../Media/SocialMedia/vsco.png";
 	});
 
 	$('#hoverDribbble').mouseenter(function(){
