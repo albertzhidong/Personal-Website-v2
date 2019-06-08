@@ -71,11 +71,11 @@ $(document).ready(function(){
 	});
 
 	$('#hoverVsco').mouseenter(function(){
-		document.getElementById("hoverMedium").src="../Media/SocialMedia/vsco_select.png";
+		document.getElementById("hoverVsco").src="../Media/SocialMedia/vsco_select.png";
 	});
 
 	$('#hoverVsco').mouseleave(function(){
-		document.getElementById("hoverMedium").src="../Media/SocialMedia/vsco.png";
+		document.getElementById("hoverVsco").src="../Media/SocialMedia/vsco.png";
 	});
 
 	$('#hoverDribbble').mouseenter(function(){
@@ -159,48 +159,6 @@ $(document).ready(function(){
 		 $(this).find('video').css({'display':'none'});
 	});
 
-	var subAppeared = false;
-
-	$(document).on('scroll', function() {
-		if($('#sidebarSub').css('display') == 'none'){
-			if($('#firstDivider').position().top < ($(window).scrollTop() + (window.innerHeight)) && subAppeared == false){
-				$('#sidebarSub').css({'opacity':'0'});
-				$('#sidebarSub').css({'display':'inherit'});
-				$('#sidebarSub').animate({'opacity':'100'}, 250);
-				$('#graybackground').css({'display':'inherit'});
-				if($('#graybackground').css('opacity') != '0'){ //if it appears, so basically mobile
-					$(".hyperlink").removeClass("hyperlinkStart");
-				}
-				subAppeared = true;
-			} else if((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight  && subAppeared == false){
-				$('#sidebarSub').css({'opacity':'0'});
-				$('#sidebarSub').css({'display':'inherit'});
-				$('#sidebarSub').animate({'opacity':'1'}, 250);
-				$('#graybackground').css({'display':'inherit'});
-				if($('#graybackground').css('opacity') != '0'){ //if it appears, so basically mobile
-					$(".hyperlink").removeClass("hyperlinkStart");
-				}
-				subAppeared = true;
-			}
-		}
-	})
-
-	$('#graybackground').click(function(){
-		$(this).animate({'opacity':'0'}, 250, function(){
-			$(this).css({'display':'none'});
-			$(this).css({'opacity':'.7'});
-		});
-		$('#sidebarSub').animate({'opacity':'0'}, 250, function(){
-			$('#sidebarSub').css({'display':'none'});
-			$('#sidebarSub').css({'opacity':'1'});
-		});
-		$(".hyperlink").addClass("hyperlinkStart");
-	})
-
-	$('.signup').find('button').click(function(){
-		alert("Thanks for subscribing!");
-		$(this).parent().find(".email_address_form").val('');
-	})
 });
 
 //controls the flashing aniamtion of the arrow
