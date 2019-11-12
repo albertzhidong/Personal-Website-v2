@@ -108,7 +108,7 @@ body{
 	z-index: 2;
 	padding-left: 15vw;
 	padding-right: 40vw;
-	padding-top: 30vh;
+	padding-top: 40vh;
 
 	p{
 		margin-top: 2%;
@@ -124,7 +124,7 @@ body{
 	}
 
 	@include responsive(largescreen){
-		padding-top: 27.5vh;
+		padding-top: 30vh;
 	}
 
 	@include responsive(mediumscreen){
@@ -132,7 +132,7 @@ body{
 	}
 
 	@include responsive(smallscreen){
-		padding-top: 12vh;
+		padding-top: 15vh;
 		padding-right: 20vh;
 	}
 }
@@ -147,20 +147,20 @@ body{
 	img{
 		width: 9%;
 		margin-left: 65%;
-		margin-top: 50vh;
+		margin-top: 45vh;
 
 		@include responsive(xlargescreen){
-			margin-top: 52.5vh;
+			margin-top: 50vh;
 			width: 10%;
 		}
 
 		@include responsive(largescreen){
-			margin-top: 55vh;
+			margin-top: 52.5vh;
 			width: 11%;
 		}
 
 		@include responsive(mediumscreen){
-			margin-top: 57.5vh;
+			margin-top: 55vh;
 			width: 12.5%;
 		}
 
