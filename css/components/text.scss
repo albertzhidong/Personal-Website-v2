@@ -1,6 +1,7 @@
 .navText{
 	font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
 	font-size: 1rem;
+	line-height: 125%;
 	color: $textblack;
 }
 
@@ -64,7 +65,7 @@ p, li{
 .AboutText{
 	font-family: HelveticaNeue-Md, Helvetica, Arial, sans-serif;
 	font-size: .9rem;
-	line-height: 180%;
+	line-height: 150%;
 
 	@include responsive(smallscreen){
 		font-size: .8rem;

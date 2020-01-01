@@ -31,37 +31,35 @@ body{
 	top: 0px;
 	right: 0px;
 	opacity: 1;
+	display: flex;
+	justify-content: flex-end;
 
 	@include responsive(smallscreen){
 		padding: 2% 3%;
 	}
 
-	.sm{
 
-		display: flex;
-		justify-content: flex-end;
-
-		li{
-			position: relative;
-			display: inline-block;
-			padding: 0% .75%;
-			color: $fauxwhite;
-
-			@include responsive(smallscreen){
-				padding: 0% 2%;
-			}
-
-			&:first-child{
-				padding-left: 0;
-			}
-		}
-
-		ul li{
-			padding: 2% 3.5% 2% 0%;
-		}
+	span{
+		position: relative;
+		padding: 0% .7%;
+		color: $fauxwhite;
 
 		a{
 			text-decoration: none;
+		}
+
+		img{
+			display: inline-block;
+			width: .65rem;
+			height: .65rem;
+			margin-left: .30rem;
+			position: relative;
+			margin-bottom: .1rem;
+			opacity: .3;
+		}
+
+		@include responsive(smallscreen){
+			padding: 0% 3%;
 		}
 	}
 
@@ -73,6 +71,7 @@ body{
 .navName{
 	width: 30vw;
 	left: 0;
+	justify-content: flex-start;
 }
 
 .navBarProjects{
