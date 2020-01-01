@@ -115,7 +115,7 @@ body{
 
 	p{
 		margin-top: 2%;
-		line-height: 160%;
+		line-height: 150%;
 
 		@include responsive(smallscreen){
 			margin-top: 4%;
@@ -124,6 +124,10 @@ body{
 		a{
 			color: $textblack;
 		}
+	}
+
+	.secondtext{
+		margin-top: .75% !important;
 	}
 
 	@include responsive(largescreen){
